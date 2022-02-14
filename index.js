@@ -1,6 +1,11 @@
-import { camelCase } from "camel-case";
+const express = require('express')
+const app = express()
+const port = 3000
 
-camelCase("string"); //=> "string"
-camelCase("dot.case"); //=> "dotCase"
-camelCase("PascalCase"); //=> "pascalCase"
-camelCase("version 1.2.10"); //=> "version_1_2_10"
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
