@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/EvaZ7/Blok-tech#readme",
   "dependencies": {
+    "camel-case": "^4.1.2",
     "express": "^4.17.2"
   }
 }
