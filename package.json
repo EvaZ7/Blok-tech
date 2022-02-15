@@ -1,14 +1,11 @@
 {
-  "name": "Blok-tech",
+  "name": "blok-tech",
   "version": "1.0.0",
-  "description": "",
+  "description": "_Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-   "scripts": {
-   "start": "node index.js"
-   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EvaZ7/Blok-tech.git"
@@ -24,5 +21,6 @@
     "camel-case": "^4.1.2",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
-  }
+  },
+  "devDependencies": {}
 }
