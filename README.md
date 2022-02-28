@@ -26,3 +26,8 @@ Feedback is altijd welkom.
 ### Credits
 
 Credits naar mij, Eva Zaadnoordijk (500847567) 2022 voor communication and multimedia design aan de HvA.
+
+### Support
+
+Snap je het niet stuur een mail naar:
+_eva.zaadnoordijk.zaadnoordijk@hva.nl_

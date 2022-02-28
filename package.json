@@ -20,7 +20,10 @@
   "dependencies": {
     "camel-case": "^4.1.2",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "handlebars": "^4.7.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15"
+  }
 }
