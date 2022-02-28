@@ -1,10 +1,17 @@
 const express = require('express')
-const app = express()
-const port = process.env.prt || 1337
+const Handlebars = require("handlebars")
+const app = express();
+app.engine('hbs', Handlebars({
+  defaultLayout: 'main',
+  extname: '.hbs'
+}));
+
+app.set('view engine', 'hbs');
+const port = process.env.prt || 1337;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.render('home');
+});
 
 app.get('/about', (req, res) => {
   res.send('Over ons')
