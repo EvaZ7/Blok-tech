@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/EvaZ7/Blok-tech#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
     "camel-case": "^4.1.2",
-    "express": "^4.17.2",
-    "handlebars": "^4.7.7"
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "handlebars": "^4.7.7",
+    "multer": "^1.4.4",
+    "slug": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^8.10.0",
