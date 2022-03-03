@@ -28,13 +28,13 @@ app.get('/', (req, res) => { //home invoegen
   res.render('getstarted');
 });
 
-app.get('/about', (req, res) => {
-  res.send('Over ons')
-})
+//app.get('/about', (req, res) => {
+//  res.send('Over ons')
+//})
 
-app.get('/info', (req, res) => {
-  res.send('Meer info')
-})
+//app.get('/info', (req, res) => {
+//  res.send('Meer info')
+//})
 
 app.get('*', (req, res) => { 
  res.send('Not found')
