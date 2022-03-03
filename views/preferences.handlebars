@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Eva Zaadnoordijk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+</head>
+<body>
+
+<form method="post" action="/preferences" enctype="multipart/form-data">
+
+  <fieldset> <!-- tijd opstaan invoegen -->
+    <legend>I usuallly get up at</legend>
+
+    <label for="wakeuptime">I usuallly get up at</label>
+    <input type="time" name="wakeuptime" required>
+  </fieldset>
+
+  <fieldset> <!-- selecteren gendervoorkeur -->
+    <legend>I would like to eat breakfast with</legend>
+
+    <label for="female">Female</label>
+    <input type="checkbox" name="female">
+
+    <label for="male">Male</label>
+    <input type="checkbox" name="male">
+
+    <label for="male">Male</label>
+    <input type="checkbox" name="male">
+
+    <label for="other">Other</label>
+    <input type="textfield" type="textfield" name="other">
+
+    <button type="submit">Next</button>
+  </fieldset>
+
+</form>
+
+</body>
+</html>

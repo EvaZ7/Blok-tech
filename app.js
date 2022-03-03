@@ -36,11 +36,19 @@ app.get('/info', (req, res) => {
   res.send('Meer info')
 })
 
-app.get('*', (req, res) => {
-  res.send('Not found')
+app.get('*', (req, res) => { 
+ res.send('Not found')
 })
 
-app.post('/preferences', upload.single('avatar'), (req, res) => {
+app.post('/getstarted', (req, res) => {
+    res.render('preferences')
+})
+
+app.post('/preferences', (req, res) => {
+  res.render('breakfast')
+})
+
+app.post('/breakfast', upload.single('avatar'), (req, res) => {
   try {
     console.log('22222', req.body.name)
     if (req.body.rock) { //rock eruit halen
@@ -48,7 +56,7 @@ app.post('/preferences', upload.single('avatar'), (req, res) => {
     } else {
       console.log('not selected')
     }
-    res.send('succes')
+    res.send('Done with setup!')
   } catch (error) {
     console.log('an error has occured')
     throw new Error(error);

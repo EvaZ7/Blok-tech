@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Eva Zaadnoordijk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast</title>
+</head>
+<body>
+
+<form action="/breakfast" method="post" enctype="multipart/form-data">
+
+  <fieldset> <!-- favorite drinken invoegen -->
+    <legend>Favorite drinks</legend>
+
+    <label for="coffee">Coffee</label>
+    <input type="checkbox" name="coffee">
+
+    <label for="water">Water</label>
+    <input type="checkbox" name="water">
+  </fieldset>
+
+  <fieldset> <!-- favoriete eten invoegen -->
+    <legend>Favorite foods</legend>
+
+    <label for="croissant">Croissant</label>
+    <input type="checkbox" name="croissant">
+
+    <label for="toast">Toast</label>
+    <input type="checkbox" name="toast">
+  </fieldset>
+
+	<button type="submit">Done</button>
+</form>
+</body>
+</html>
