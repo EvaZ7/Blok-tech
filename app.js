@@ -10,6 +10,8 @@ const multer  = require('multer')
 const upload = multer({ dest: 'uploads/'})
 const app = express();
 
+//const filepath = '~/Blok-tech/static/media/404giphy.gif'
+
 //require('dotenv').config()
 
 const PORT = 1337;
@@ -25,7 +27,7 @@ app.use(bodyParser.json());
 app.use(express.static('static'));
 
 app.get('/', (req, res) => { //home invoegen
-  res.render('getstarted');
+  res.render('home');
 });
 
 //app.get('/about', (req, res) => {
@@ -38,10 +40,11 @@ app.get('/', (req, res) => { //home invoegen
 
 app.get('*', (req, res) => { 
  res.send('Not found')
+ //res.src = "static/images/404giphy.gif";
 })
 
 app.post('/getstarted', (req, res) => {
-    res.render('preferences')
+  res.render('preferences')
 })
 
 app.post('/preferences', (req, res) => {
