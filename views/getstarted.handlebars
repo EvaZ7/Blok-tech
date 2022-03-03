@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Eva Zaadnoordijk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+</head>
+<body>
+
+<form action="/preferences" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+    <legend>Basic startup</legend>
+
+    <label for="avatar">Select your avatar</label>
+    <input type="file" name="avatar">
+
+    <label for="username">Choose your username</label>
+    <input type="text" name="username" required>
+  </fieldset>
+
+  <fieldset> <!-- favorite drinken invoegen -->
+    <legend>Favorite drinks</legend>
+
+    <label for="coffee">Coffee</label>
+    <input type="checkbox" name="coffee" required>
+
+    <label for="water">Water</label>
+    <input type="checkbox" name="water" required>
+  </fieldset>
+
+  <fieldset> <!-- favoriete eten invoegen -->
+    <legend>Favorite foods</legend>
+
+    <label for="croissant">Croissant</label>
+    <input type="checkbox" name="croissant" required>
+
+    <label for="toast">Toast</label>
+    <input type="checkbox" name="toast" required>
+  </fieldset>
+
+  <fieldset> <!-- tijd opstaan invoegen -->
+    <legend>I usuallly get up at</legend> <!-- tijd invoegen -->
+
+    <label for="wakeuptime">I usuallly get up at</label>
+    <input type="checkbox" name="wakeuptime" required>
+  </fieldset>
+
+  <fieldset required> <!-- selecteren gendervoorkeur -->
+    <legend>I would like to eat breakfast with</legend>
+
+    <label for="female">Female</label>
+    <input type="checkbox" name="female" required>
+
+    <label for="male">Male</label>
+    <input type="checkbox" name="male">
+
+    <label for="male">Male</label>
+    <input type="checkbox" name="male">
+
+    <label for="other">Other</label>
+    <input type="textfield" type="textfield" name="other">
+  </fieldset>
+</form>
+
+<script src="/static/script/script.js"></script>
+</body>
+</html>

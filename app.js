@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(express.static('static'));
 
 app.get('/', (req, res) => { //home invoegen
-  res.render('createprofile');
+  res.render('getstarted');
 });
 
 app.get('/about', (req, res) => {
@@ -40,10 +40,10 @@ app.get('*', (req, res) => {
   res.send('Not found')
 })
 
-app.post('/profile', upload.single('avatar'), (req, res) => {
+app.post('/preferences', upload.single('avatar'), (req, res) => {
   try {
     console.log('22222', req.body.name)
-    if (req.body.rock) {
+    if (req.body.rock) { //rock eruit halen
       console.log('rock was selected')
     } else {
       console.log('not selected')
