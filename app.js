@@ -10,7 +10,7 @@ const app = express();
 //installatie sass
 const sass = require('sass');
 const result = sass.compile("./static/styles/style.css");
-console.log(result.css);
+app.set(result.css);
 //const filepath = '~/Blok-tech/static/media/404giphy.gif' ---was te proberen
 //init enviromental variables
 //require('dotenv').config()
