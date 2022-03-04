@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+h1 {
+  color: aquamarine;
+}
+
+html {
+  color: aqua;
+}
+
+legend {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
