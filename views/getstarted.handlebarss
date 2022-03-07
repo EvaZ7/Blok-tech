@@ -22,7 +22,7 @@
     <input type="text" name="username" required>
   </fieldset>
 
-  <label for="terms">I agree with the <a href="#">terms of service</a></label> <!-- gebruikersvoorwaarden -->
+  <label for="terms">I agree with the <a href="#">terms of service</a></label>
 	<input type="checkbox" name="terms_conditions" required>
 
 	<button type="submit">Continue</button>
