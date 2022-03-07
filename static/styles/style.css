@@ -9,4 +9,12 @@ html {
 legend {
   color: red;
 }
+
+legend h1 {
+  color: aquamarine;
+}
+
+legend h1 a {
+  color: green;
+}
 /*# sourceMappingURL=style.css.map */
