@@ -15,7 +15,8 @@ app.set(result.css);
 //init enviromental variables
 //require('dotenv').config()
 //set poort 1337
-const PORT = 5000;
+// eslint-disable-next-line no-undef
+const PORT = process.env.PORT || 5000;
 //initialize handlebars
 app.engine('handlebars', engine());
 //set view engine to handlebars
