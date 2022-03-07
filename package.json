@@ -2,7 +2,7 @@
   "name": "blok-tech",
   "version": "1.0.0",
   "description": "_Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_",
-  "main": "web.js",
+  "main": "nodemon app.js",
   "scripts": {
     "start": "node index.js"
   },
