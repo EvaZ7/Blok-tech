@@ -4,7 +4,7 @@
   "description": "_Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_",
   "main": "nodemon app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
