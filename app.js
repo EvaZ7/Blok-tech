@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(express.static('static'));
 
 app.get('/', (req, res) => { //home invoegen
-  res.render('home');
+  res.render('getstarted');
 });
 
 //app.get('/about', (req, res) => {
