@@ -2,7 +2,7 @@
   "name": "blok-tech",
   "version": "1.0.0",
   "description": "_Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
     "start": "node index.js"
   },
@@ -15,6 +15,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EvaZ7/Blok-tech/issues"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "homepage": "https://github.com/EvaZ7/Blok-tech#readme",
   "dependencies": {
