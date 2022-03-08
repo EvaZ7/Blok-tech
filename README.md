@@ -21,7 +21,7 @@ In dit project ga ik een deel van een applicatie uitwerken voor een matching app
 
 ### Want to contribute
 
-Feedback is altijd welkom.
+Dien een issue in om suggesties te kunnen geven of praat mee met een pull request. Feedback is altijd welkom.
 
 ### Credits
 

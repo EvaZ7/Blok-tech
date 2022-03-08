@@ -13,7 +13,9 @@ const result = sass.compile("./static/styles/style.css");
 app.set(result.css);
 //const filepath = '~/Blok-tech/static/media/404giphy.gif' ---was te proberen
 //init enviromental variables
-//require('dotenv').config()
+require('dotenv').config()
+const connectDB = require('./config/db');
+connectDB();
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 1378;
@@ -41,19 +43,23 @@ app.get('/', (req, res) => { //home invoegen
 //  res.send('Meer info')
 //})
 
+//fage not found
 app.get('*', (req, res) => { 
  res.send('Not found')
  //res.src = "static/images/404giphy.gif";
 })
 
+//tweede pagina inladen
 app.post('/getstarted', (req, res) => {
   res.render('preferences')
 })
 
+//derde pagina inladen
 app.post('/preferences', (req, res) => {
   res.render('breakfast')
 })
 
+//uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
   try {
     console.log('22222', req.body.name)
@@ -69,6 +75,7 @@ app.post('/breakfast', upload.single('avatar'), (req, res) => {
   }
 })
 
+//port instellen
 app.listen(PORT, () => {
   console.log('app running on port, PORT')
 })
