@@ -16,6 +16,8 @@ app.set(result.css);
 require('dotenv').config()
 const connectDB = require('./config/db');
 connectDB();
+
+const Profile = require('./modals/profile')
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
@@ -74,8 +76,13 @@ app.post('/breakfast', upload.single('avatar'), (req, res) => {
     throw new Error(error);
   }
 })
+// eslint-disable-next-line no-unused-vars
+app.post('/createProfile', async (req, res) => {
+  const profile = new Profile(req.body)
+  await profile.save()
+})
 
 //port instellen
 app.listen(PORT, () => {
-  console.log('app running on port, PORT')
+  console.log('app running on port', PORT)
 })
