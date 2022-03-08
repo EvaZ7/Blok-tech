@@ -1,21 +1,39 @@
+//sccs file
+
+//var colors 
 $base-color-croissant: #e6a97e;
 $base-color-coffee: #9b572c;
 $base-color-egg: #f0c579;
+$font-color-bacon: #bb4738; 
 
 $font-color-headings: #281915;
+$font-color-basic: #58372a;
+
+//var fonts
+$main-font: 'Nunito', sans-serif;
+html{
+    background-color: $base-color-croissant; 
+    font-family: $main-font;
+}
 
 h1 {
     color: aquamarine;
 }
-form {
-    background-color: $base-color-croissant; 
-}
-legend{
-    color: green;
-    h1{
-        color: aquamarine;
+form{
+    fieldset{
+        border-style: none;
+        legend{
+            color: $font-color-headings;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+    label{
+        color: $font-color-basic;
         a{
-            color: green;
+            text-decoration: none;
+            color: $font-color-bacon;
         }
     }
 }
+

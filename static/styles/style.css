@@ -1,20 +1,28 @@
+html {
+  background-color: #e6a97e;
+  font-family: "Nunito", sans-serif;
+}
+
 h1 {
   color: aquamarine;
 }
 
-form {
-  background-color: #e6a97e;
+form fieldset {
+  border-style: none;
 }
 
-legend {
-  color: green;
+form fieldset legend {
+  color: #281915;
+  font-weight: bold;
+  font-size: 2em;
 }
 
-legend h1 {
-  color: aquamarine;
+form label {
+  color: #58372a;
 }
 
-legend h1 a {
-  color: green;
+form label a {
+  text-decoration: none;
+  color: #bb4738;
 }
 /*# sourceMappingURL=style.css.map */
