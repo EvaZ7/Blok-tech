@@ -18,7 +18,7 @@ const connectDB = require('./config/db');
 connectDB();
 //set poort 1337
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 1378;
+const PORT = process.env.PORT || 5000;
 //initialize handlebars
 app.engine('handlebars', engine());
 //set view engine to handlebars
