@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static('static'));
 
-app.get('/', (req, res) => { //home invoegen
+app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
 });
 

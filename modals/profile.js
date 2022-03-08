@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const proSchema = new mongoose.Schema({
+const profileSchema = new mongoose.Schema({
     identifier: {
         type: Number,
         required: true
@@ -18,4 +18,5 @@ const proSchema = new mongoose.Schema({
 
 })
 
-const Profile = mongoose.model('Profile'. proSchema);
+const Profile = mongoose.model('Profile', profileSchema);
+module.exports = Profile
