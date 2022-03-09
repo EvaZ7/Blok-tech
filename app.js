@@ -41,20 +41,11 @@ app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
 });
 
-//app.get('/about', (req, res) => {
-//  res.send('Over ons')
-//})
-
-//fage not found
+//page not found
 app.get('*', (req, res) => { 
- res.send('Not found')
- //res.src = "static/images/404giphy.gif";
+ //res.send('Not found')
+ res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
 })
-
-//tweede pagina inladen
-//app.post('/getstarted', (req, res) => {
- // res.render('preferences')
-//})
 
 // eslint-disable-next-line no-unused-vars
 app.post('/getstarted', async (req, res) => {
