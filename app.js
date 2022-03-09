@@ -1,22 +1,24 @@
-const express = require('express')
-const {engine} = require('express-handlebars')
+const express = require('express');
+const {engine} = require('express-handlebars');
 //const req = require("express/lib/request")
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 //const slug = require('slug')
 //afbeeldingen uploaden en handelen
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/'})
+const multer  = require('multer');
+const upload = multer({ dest: 'uploads/'});
 const app = express();
 //installatie sass
 const sass = require('sass');
 
 //app.use(express.static('static'));
 app.use('/static', express.static('static'));
+
+//scss invoegen
 const result = sass.compile("./static/styles/style.css");
 app.set(result.css);
 //const filepath = '~/Blok-tech/static/media/404giphy.gif' ---was te proberen
 //init enviromental variables
-require('dotenv').config()
+require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
 
