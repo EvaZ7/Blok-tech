@@ -54,9 +54,9 @@ app.get('*', (req, res) => {
 
 // eslint-disable-next-line no-unused-vars
 app.post('/getstarted', async (req, res) => {
+  res.render('preferences');
   const profile = new Profile(req.body);
   await profile.save();
-  res.render('preferences');
 })
 
 //derde pagina inladen

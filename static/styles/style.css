@@ -6,6 +6,12 @@ html {
 /*------------------
 -------HEADER-------
 --------------------*/
+h1 {
+  color: #281915;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -24,26 +30,6 @@ header {
   background-color: #9b572c;
 }
 
-header > img {
-  /*wizardingworld logo top*/
-  -ms-grid-column-align: center;
-      justify-self: center;
-  height: 3em;
-  max-height: 5em;
-}
-
-header > a {
-  /*login button*/
-  text-decoration: none;
-  text-transform: uppercase;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 0.8em 1.6em;
-  border-radius: 0.3em;
-  font-size: 0.6em;
-  background-color: var(--buttoncolor);
-}
-
 nav ul {
   /*Hamburger menu*/
   position: fixed;
@@ -56,14 +42,12 @@ nav ul {
   margin: 0;
   padding-top: 4em;
   padding: 2em 1em 1em 1em;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
-nav ul .open {
+nav ul.open {
   /*openen hamburger menu*/
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   max-width: 34em;
 }
 
@@ -87,16 +71,15 @@ nav a {
   text-decoration: none;
 }
 
-nav > a img {
+nav>a img {
   /*hamburger menu knop (streepjes)*/
   height: 2em;
   padding-left: 1em;
 }
 
-h1 {
-  color: #281915;
-}
-
+/*------------------
+------DE FORMS------
+--------------------*/
 form fieldset {
   border-style: none;
 }
@@ -105,6 +88,7 @@ form fieldset legend {
   color: #281915;
   font-weight: bold;
   font-size: 2em;
+  text-align: center;
 }
 
 form label {
@@ -116,11 +100,13 @@ form label a {
   color: #bb4738;
 }
 
+/*------------------
+------RESTYLEN------
+--------------------*/
 @media (min-width: 70em) {
   h1 {
     -ms-grid-column: 2;
     grid-column: 2;
-    display: center;
   }
   header {
     display: -ms-grid;
@@ -131,7 +117,7 @@ form label a {
         grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0.5em;
   }
-  header > img {
+  header>img {
     /*Wizardingworld logo*/
     -ms-grid-column: 2;
     grid-column: 2;
@@ -177,12 +163,6 @@ form label a {
   header nav ul li a {
     /*de links van de nav*/
     width: 1em;
-  }
-  header:hover {
-    background-color: #242633;
-  }
-  body.login header:hover {
-    background-color: rgba(36, 38, 51, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
