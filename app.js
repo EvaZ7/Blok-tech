@@ -39,6 +39,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
+  console.log('avatar');
 });
 
 //page not found
