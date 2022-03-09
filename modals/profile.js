@@ -1,19 +1,12 @@
 const mongoose = require('mongoose')
 
 const profileSchema = new mongoose.Schema({
-    identifier: {
-        type: Number,
+    profilePic: {
+        type: Image,
         required: true
     },
-    content: {
-        type: String,
-        required: true,
-        lowercase: true
-    },
-    review: {
-        type: String,
-        required: true,
-        lowercase: true
+    username: {
+        type: String
     }
 
 })

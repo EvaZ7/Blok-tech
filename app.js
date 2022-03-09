@@ -57,9 +57,9 @@ app.post('/getstarted', (req, res) => {
 })
 
 //derde pagina inladen
-app.post('/preferences', (req, res) => {
-  res.render('breakfast')
-})
+//app.post('/preferences', (req, res) => {
+ // res.render('breakfast')
+//})
 
 //uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
@@ -77,9 +77,10 @@ app.post('/breakfast', upload.single('avatar'), (req, res) => {
   }
 })
 // eslint-disable-next-line no-unused-vars
-app.post('/getstarted', async (req, res) => {
-  const profile = new Profile(req.body)
-  await profile.save()
+app.post('/preferences', async (req, res) => {
+  const profile = new Profile(req.body);
+  await profile.save();
+  res.redirect('preferences');
 })
 
 //port instellen
