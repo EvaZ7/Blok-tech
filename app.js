@@ -36,13 +36,9 @@ app.set('views', './views')
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => { //home invoegen, root
+app.get('/', upload.single('avatar'), (req, res) => { //home invoegen, root
   res.render('getstarted');
 });
-
-//app.get('/about', (req, res) => {
-//  res.send('Over ons')
-//})
 
 //fage not found
 app.get('*', (req, res) => { 
