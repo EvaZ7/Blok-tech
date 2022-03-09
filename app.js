@@ -62,6 +62,17 @@ app.post('/preferences', (req, res) => {
 //uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
   res.render('home')
+//    console.log('22222', req.body.name)
+//if (req.body.rock) { //rock eruit halen
+ // console.log('rock was selected')
+//} else {
+ // console.log('not selected')
+//}
+//res.send('Done with setup!')
+//} catch (error) {
+//console.log('an error has occured')
+//throw new Error(error);
+//}
 })
 
 //port instellen
