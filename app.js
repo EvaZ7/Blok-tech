@@ -17,7 +17,7 @@ require('dotenv').config()
 const connectDB = require('./config/db');
 connectDB();
 
-const Profile = require('./modals/profile')
+const Profile = require('./views/getstarted.handlebars')
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
