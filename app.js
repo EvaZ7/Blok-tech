@@ -36,13 +36,12 @@ app.set('views', './views')
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/', upload.single('avatar'), (req, res) => { //home invoegen, root
+app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
 });
 
-//fage not found
+//page not found
 app.get('*', (req, res) => { 
- //res.send('Not found')
  res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
 });
 
