@@ -9,6 +9,7 @@ _Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
 - _Want to Contribute?_ How do I get started?
 - _Credits_ Me...
 - _Support_ Where can I get more help, if I need it?
+-_Sources_ Apa list of resources I used.
 
 ### About
 
@@ -31,3 +32,13 @@ Credits naar mij, Eva Zaadnoordijk (500847567) 2022 voor communication and multi
 
 Snap je het niet stuur een mail naar:
 _eva.zaadnoordijk.zaadnoordijk@hva.nl_
+
+### Sources
+
+#### Fonts
+
+Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
+
+#### Images
+
+Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wizarding World: The Official Home of Harry Potter. Geraadpleegd op 9 maart 2022, van https://www.wizardingworld.com/

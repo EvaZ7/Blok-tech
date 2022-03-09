@@ -20,7 +20,7 @@ connectDB();
 const Profile = require('./modals/profile')
 //set poort 1337
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 1378;
 //initialize handlebars
 app.engine('handlebars', engine());
 //set view engine to handlebars
@@ -41,10 +41,6 @@ app.get('/', (req, res) => { //home invoegen, root
 //  res.send('Over ons')
 //})
 
-//app.get('/info', (req, res) => {
-//  res.send('Meer info')
-//})
-
 //fage not found
 app.get('*', (req, res) => { 
  res.send('Not found')
@@ -52,35 +48,25 @@ app.get('*', (req, res) => {
 })
 
 //tweede pagina inladen
-app.post('/getstarted', (req, res) => {
-  res.render('preferences')
+//app.post('/getstarted', (req, res) => {
+ // res.render('preferences')
+//})
+
+// eslint-disable-next-line no-unused-vars
+app.post('/getstarted', async (req, res) => {
+  const profile = new Profile(req.body);
+  await profile.save();
+  res.render('preferences');
 })
 
 //derde pagina inladen
-//app.post('/preferences', (req, res) => {
- // res.render('breakfast')
-//})
+app.post('/preferences', (req, res) => {
+  res.render('breakfast')
+})
 
 //uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
-  try {
-    console.log('22222', req.body.name)
-    if (req.body.rock) { //rock eruit halen
-      console.log('rock was selected')
-    } else {
-      console.log('not selected')
-    }
-    res.send('Done with setup!')
-  } catch (error) {
-    console.log('an error has occured')
-    throw new Error(error);
-  }
-})
-// eslint-disable-next-line no-unused-vars
-app.post('/preferences', async (req, res) => {
-  const profile = new Profile(req.body);
-  await profile.save();
-  res.redirect('preferences');
+  res.render('home')
 })
 
 //port instellen

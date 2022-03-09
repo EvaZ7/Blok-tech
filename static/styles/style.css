@@ -3,8 +3,98 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
+/*------------------
+-------HEADER-------
+--------------------*/
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1em 0em 0.4em;
+  z-index: 2;
+  background-color: #9b572c;
+}
+
+header > img {
+  /*wizardingworld logo top*/
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 3em;
+  max-height: 5em;
+}
+
+header > a {
+  /*login button*/
+  text-decoration: none;
+  text-transform: uppercase;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.8em 1.6em;
+  border-radius: 0.3em;
+  font-size: 0.6em;
+  background-color: var(--buttoncolor);
+}
+
+nav ul {
+  /*Hamburger menu*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--backgroundcolor);
+  text-decoration: none;
+  margin: 0;
+  padding-top: 4em;
+  padding: 2em 1em 1em 1em;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+nav ul .open {
+  /*openen hamburger menu*/
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  max-width: 34em;
+}
+
+nav ul li {
+  /*Hamburger menu kopjes*/
+  list-style-type: none;
+  padding: 1em 1.5em 1em 1.5em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav ul img {
+  /*kruisje/sluit menu knop*/
+  width: 2em;
+  height: auto;
+}
+
+nav a {
+  /*geen underline van linkjes*/
+  text-decoration: none;
+}
+
+nav > a img {
+  /*hamburger menu knop (streepjes)*/
+  height: 2em;
+  padding-left: 1em;
+}
+
 h1 {
-  color: aquamarine;
+  color: #281915;
 }
 
 form fieldset {
@@ -24,5 +114,75 @@ form label {
 form label a {
   text-decoration: none;
   color: #bb4738;
+}
+
+@media (min-width: 70em) {
+  h1 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    display: center;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.5em;
+  }
+  header > img {
+    /*Wizardingworld logo*/
+    -ms-grid-column: 2;
+    grid-column: 2;
+    padding-bottom: 0.5em;
+    width: 4.5em;
+    height: auto;
+  }
+  header nav {
+    /*de nav*/
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: 1/-1;
+    border-top: solid;
+    border-width: 0.01em;
+    border-color: white;
+  }
+  header nav img {
+    /*de sluit button en hamburger button*/
+    display: none;
+  }
+  header nav ul {
+    /*de gehele lijst in de nav*/
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1em;
+    background: none;
+  }
+  header nav ul li {
+    /*de kopjes in de nav*/
+    font-size: 0.8em;
+    height: 1em;
+  }
+  header nav ul li a {
+    /*de links van de nav*/
+    width: 1em;
+  }
+  header:hover {
+    background-color: #242633;
+  }
+  body.login header:hover {
+    background-color: rgba(36, 38, 51, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

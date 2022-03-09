@@ -1,12 +1,13 @@
 const mongoose = require('mongoose')
 
 const profileSchema = new mongoose.Schema({
-    profilePic: {
-        type: Image,
-        required: true
-    },
     username: {
-        type: String
+        type: String,
+        username: String
+    }, 
+    pronouns: {
+        type: String,
+        pronouns: String
     }
 
 })
