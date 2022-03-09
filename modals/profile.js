@@ -2,12 +2,10 @@ const mongoose = require('mongoose')
 
 const profileSchema = new mongoose.Schema({
     username: {
-        type: String,
-        username: String
+        type: String
     }, 
     pronouns: {
-        type: String,
-        pronouns: String
+        type: String
     }
 
 })
