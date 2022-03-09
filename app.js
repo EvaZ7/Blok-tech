@@ -50,11 +50,6 @@ app.get('*', (req, res) => {
  res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
 });
 
-//tweede pagina inladen
-//app.post('/getstarted', (req, res) => {
- // res.render('preferences')
-//})
-
 // eslint-disable-next-line no-unused-vars
 app.post('/getstarted', async (req, res) => {
   res.render('preferences');
