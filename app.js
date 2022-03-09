@@ -78,7 +78,7 @@ app.post('/breakfast', upload.single('avatar'), (req, res) => {
 })
 // eslint-disable-next-line no-unused-vars
 app.post('/createProfile', async (req, res) => {
-  const profile = new Profile(req.body)
+  const profile = new Profile(req.body.username)
   await profile.save()
 })
 
