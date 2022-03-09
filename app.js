@@ -31,7 +31,8 @@ app.set('views', './views')
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(express.static('static'));
+//app.use(express.static('static'));
+app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');

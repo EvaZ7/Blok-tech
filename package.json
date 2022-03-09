@@ -22,7 +22,6 @@
   "homepage": "https://github.com/EvaZ7/Blok-tech#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
-    "camel-case": "^4.1.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
@@ -35,6 +34,7 @@
   },
   "devDependencies": {
     "eslint": "^8.10.0",
+    "camel-case": "^4.1.2",
     "nodemon": "^2.0.15"
   }
 }
