@@ -1,8 +1,9 @@
+const req = require('express/lib/request');
 const mongoose = require('mongoose')
 
 const profileSchema = new mongoose.Schema({
     identifier: {
-        type: Number,
+        type: req.body.username,
         required: true
     },
     content: {

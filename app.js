@@ -17,7 +17,7 @@ require('dotenv').config()
 const connectDB = require('./config/db');
 connectDB();
 
-const Profile = require('./views/getstarted.handlebars')
+const Profile = require('./modals/profile')
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
@@ -77,7 +77,7 @@ app.post('/breakfast', upload.single('avatar'), (req, res) => {
   }
 })
 // eslint-disable-next-line no-unused-vars
-app.post('/getstarted', async (req, res) => {
+app.post('/createProfile', async (req, res) => {
   const profile = new Profile(req.body)
   await profile.save()
 })
