@@ -2,18 +2,18 @@ const mongoose = require('mongoose')
 
 const profileSchema = new mongoose.Schema({
     identifier: {
-        type: Number,
+        type: File,
         required: true
     },
     content: {
-        type: String,
+        type: Image,
         required: true,
-        lowercase: true
+        //lowercase: true
     },
     review: {
-        type: String,
+        type: Image,
         required: true,
-        lowercase: true
+        //lowercase: true
     }
 
 })
