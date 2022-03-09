@@ -9,6 +9,9 @@ const upload = multer({ dest: 'uploads/'})
 const app = express();
 //installatie sass
 const sass = require('sass');
+
+//app.use(express.static('static'));
+app.use('/static', express.static('static'));
 const result = sass.compile("./static/styles/style.css");
 app.set(result.css);
 //const filepath = '~/Blok-tech/static/media/404giphy.gif' ---was te proberen
@@ -31,8 +34,6 @@ app.set('views', './views')
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-//app.use(express.static('static'));
-app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
