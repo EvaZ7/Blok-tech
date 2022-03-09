@@ -16,13 +16,12 @@ app.use('/static', express.static('static'));
 //scss invoegen
 const result = sass.compile("./static/styles/style.css");
 app.set(result.css);
-//const filepath = '~/Blok-tech/static/media/404giphy.gif' ---was te proberen
 //init enviromental variables
 require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
 
-const Profile = require('./modals/profile')
+const Profile = require('./modals/profile');
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 1378;
@@ -47,9 +46,9 @@ app.get('/', (req, res) => { //home invoegen, root
 
 //fage not found
 app.get('*', (req, res) => { 
- res.send('Not found')
- //res.src = "static/images/404giphy.gif";
-})
+ //res.send('Not found')
+ res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
+});
 
 //tweede pagina inladen
 //app.post('/getstarted', (req, res) => {
@@ -61,19 +60,19 @@ app.post('/getstarted', async (req, res) => {
   res.render('preferences');
   const profile = new Profile(req.body);
   await profile.save();
-})
+});
 
 //derde pagina inladen
 app.post('/preferences', (req, res) => {
-  res.render('breakfast')
-})
+  res.render('breakfast');
+});
 
 //uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
-  res.render('home')
-})
+  res.render('home');
+});
 
 //port instellen
 app.listen(PORT, () => {
-  console.log('app running on port', PORT)
-})
+  console.log('app running on port', PORT);
+});
