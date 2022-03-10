@@ -53,7 +53,7 @@ app.post('/getstarted', (req, res) => {
   console.log(req.body)
   const profile = new Profile(req.body);
   profile.save();
-  res.redirect('/preferences');
+  res.render('preferences');
 })
 
 //derde pagina inladen
