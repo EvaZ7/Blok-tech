@@ -39,7 +39,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => { //home invoegen, root
   res.render('getstarted');
-  console.log('avatar');
+  // console.log('avatar');
 });
 
 //page not found
@@ -48,11 +48,12 @@ app.get('*', (req, res) => {
  res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
 })
 
-// eslint-disable-next-line no-unused-vars
-app.post('/getstarted', async (req, res) => {
-  res.render('preferences');
+// sturen profile naar database en ga naar preferences
+app.post('/getstarted', (req, res) => {
+  console.log(req.body)
   const profile = new Profile(req.body);
-  await profile.save();
+  profile.save();
+  res.redirect('/preferences');
 })
 
 //derde pagina inladen

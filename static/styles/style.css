@@ -42,12 +42,14 @@ nav ul {
   margin: 0;
   padding-top: 4em;
   padding: 2em 1em 1em 1em;
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 nav ul.open {
   /*openen hamburger menu*/
-  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   max-width: 34em;
 }
 
