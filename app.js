@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 //afbeeldingen uploaden en handelen
 const multer  = require('multer');
 const upload = multer({ dest: 'uploads/'});
+
 const app = express();
 //installatie sass
 const sass = require('sass');
@@ -22,7 +23,9 @@ require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
 
+//Schema's
 const Profile = require('./modals/profile')
+const Preference = require('./modals/preference')
 //set poort 1337
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 1378;
@@ -50,7 +53,7 @@ app.get('*', (req, res) => {
 
 // sturen profile naar database en ga naar preferences
 app.post('/getstarted', (req, res) => {
-  console.log(req.body)
+//  console.log(req.body) //checken of hij data ophaalt uit de body
   const profile = new Profile(req.body);
   profile.save();
   res.render('preferences');
@@ -58,11 +61,17 @@ app.post('/getstarted', (req, res) => {
 
 //derde pagina inladen
 app.post('/preferences', (req, res) => {
+//  console.log(req.body) //checken of hij data ophaalt uit de body
+  const profile = new Preference(req.body);
+  profile.save();
   res.render('breakfast')
 })
 
 //uploaden avatar en message done with setup meegeven.
 app.post('/breakfast', upload.single('avatar'), (req, res) => {
+//  console.log(req.body) //checken of hij data ophaalt uit de body
+  const profile = new Profile(req.body);
+  profile.save();
   res.render('home')
 //    console.log('22222', req.body.name)
 //if (req.body.rock) { //rock eruit halen

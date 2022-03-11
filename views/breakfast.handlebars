@@ -1,6 +1,5 @@
-<body>
-  
-<form action="/breakfast" method="post" enctype="multipart/form-data">
+<body> <!-- form voor invoegen ontbijtvoorkeuren -->
+<form action="/breakfast" method="post">
 
   <fieldset> <!-- favorite drinken invoegen -->
     <legend>Favorite drinks</legend>
@@ -10,6 +9,15 @@
 
     <label for="water">Water</label>
     <input type="checkbox" name="water">
+
+    <label for="tea">Tea</label>
+    <input type="checkbox" name="tea">
+
+    <label for="juice">Juice</label>
+    <input type="checkbox" name="juice">
+
+    <label for="smoothie">Smoothie</label>
+    <input type="checkbox" name="smoothie">
   </fieldset>
 
   <fieldset> <!-- favoriete eten invoegen -->
@@ -20,6 +28,15 @@
 
     <label for="toast">Toast</label>
     <input type="checkbox" name="toast">
+
+    <label for="eggs">Eggs</label>
+    <input type="checkbox" name="eggs">
+
+    <label for="yogurt">Yogurt</label>
+    <input type="checkbox" name="yogurt">
+
+    <label for="sandwich">Sandwich</label>
+    <input type="checkbox" name="sandwich">
   </fieldset>
 
 	<button type="submit">Done</button>
