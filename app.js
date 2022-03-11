@@ -22,7 +22,7 @@ app.set(result.css);
 require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
-const uri = process.env.CONNECTION_STRING;
+//const uri = process.env.CONNECTION_STRING;
 
 //Schema's
 const Profile = require('./modals/profile')
