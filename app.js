@@ -22,6 +22,7 @@ app.set(result.css);
 require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
+const uri = process.env.CONNECTION_STRING;
 
 //Schema's
 const Profile = require('./modals/profile')
@@ -56,7 +57,7 @@ app.post('/getstarted', (req, res) => {
 //  console.log(req.body) //checken of hij data ophaalt uit de body
   const profile = new Profile(req.body);
   profile.save();
-  //res.render('preferences');
+  res.render('preferences');
 })
 
 //derde pagina inladen
