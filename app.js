@@ -3,10 +3,21 @@ const {engine} = require('express-handlebars');
 //const req = require("express/lib/request")
 const bodyParser = require('body-parser');
 //const slug = require('slug')
+
 //afbeeldingen uploaden en handelen
 const multer  = require('multer');
-const upload = multer({ dest: 'uploads/'});
+const storage = multer.diskStorage ({
+    destination: (req, file, cb) => {
+      cb (null, './uploads');
+    },
+    filename : function (req, file, callback) {
+      callback(null, file.fieldname + '-' + Date.now() + file.originalname)
+    }
+  });
+// eslint-disable-next-line no-undef
+const upload = multer({storage: storage}); //{storage: storage});
 
+//express toevoegen
 const app = express();
 //installatie sass
 const sass = require('sass');
@@ -22,12 +33,12 @@ app.set(result.css);
 require('dotenv').config();
 const connectDB = require('./config/db');
 connectDB();
-//const uri = process.env.CONNECTION_STRING;
 
 //Schema's
 const Profile = require('./modals/profile')
-const Preference = require('./modals/preference')
-//set poort 1337
+const Preference = require('./modals/preference');
+//const { path } = require('express/lib/application');
+
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 1378;
 //initialize handlebars
@@ -53,9 +64,9 @@ app.get('*', (req, res) => {
 })
 
 // sturen profile naar database en ga naar preferences
-app.post('/getstarted', (req, res) => {
-//  console.log(req.body) //checken of hij data ophaalt uit de body
-  const profile = new Profile(req.body);
+app.post('/getstarted', upload.single('avatar'), (req, res) => { 
+  console.log(req.file, req.body) //checken of hij data ophaalt uit de body
+  const profile = new Profile(req.body); //req.file-- hier gaat het fout 
   profile.save();
   res.render('preferences');
 })
@@ -68,23 +79,18 @@ app.post('/preferences', (req, res) => {
   res.render('breakfast')
 })
 
-//uploaden avatar en message done with setup meegeven.
-app.post('/breakfast', upload.single('avatar'), (req, res) => {
+//data ophalen uit server en profiel renderen
+app.post('/breakfast', (req, res) => {
+  try {
+    const profileData = Profile.find({username: "eva"}).lean();
+    res.render('home', {data : profileData[0], title: 'Home - profile'})
+    console.log(profileData);
+  } catch (error) {
+    throw new Error(error);
+  }
 //  console.log(req.body) //checken of hij data ophaalt uit de body
-  const profile = new Profile(req.body);
-  profile.save();
-  res.render('home')
-//    console.log('22222', req.body.name)
-//if (req.body.rock) { //rock eruit halen
- // console.log('rock was selected')
-//} else {
- // console.log('not selected')
-//}
-//res.send('Done with setup!')
-//} catch (error) {
-//console.log('an error has occured')
-//throw new Error(error);
-//}
+//  const profile = new Profile(req.body);
+//  profile.save();
 })
 
 //port instellen
