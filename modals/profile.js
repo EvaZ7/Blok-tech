@@ -2,11 +2,6 @@ const mongoose = require('mongoose');
 //const Schema = mongoose.Schema;
 
 const profileSchema = new mongoose.Schema({
-    avatar: {
-        // eslint-disable-next-line no-undef
-        //data: Buffer,
-        contentType: String
-    },
     username: {
         type: String,
         username: String
@@ -14,6 +9,10 @@ const profileSchema = new mongoose.Schema({
     pronouns: {
         type: String,
         pronouns: String
+    },
+    avatar: {
+     type: String,
+     avatar: String   
     }
     //preference: {
     //  type: Schema.Type.ObjectId,

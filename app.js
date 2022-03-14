@@ -1,4 +1,5 @@
 const express = require('express');
+//var mongoose = require('mongoose');
 const {engine} = require('express-handlebars');
 //const req = require("express/lib/request")
 const bodyParser = require('body-parser');
@@ -57,16 +58,41 @@ app.get('/', (req, res) => { //home invoegen, root
   // console.log('avatar');
 });
 
+
+app.get('/home', (req, res) => { //home invoegen, root
+  console.log('Hello World')
+  try {
+    const profileData = Profile.find({username: "eva"});
+    console.log(profileData);
+    res.render('home', {data : profileData[0], title: 'Home - profile'})
+  } catch (error) {
+    throw new Error(error);
+  }
+  // console.log('avatar');
+});
+
 //page not found
-app.get('*', (req, res) => { 
- //res.send('Not found')
- res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
-})
+ app.get('*', (req, res) => { 
+  //res.send('Not found')
+  res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
+ })
 
 // sturen profile naar database en ga naar preferences
 app.post('/getstarted', upload.single('avatar'), (req, res) => { 
-  console.log(req.file, req.body) //checken of hij data ophaalt uit de body
-  const profile = new Profile(req.body); //req.file-- hier gaat het fout 
+
+  console.log(req.file);
+  console.log(req.body);
+
+  let newProfile = {
+    username: req.body.username,
+    pronouns: req.body.pronouns,
+    avatar: req.file.filename
+  }
+
+  console.log(newProfile);
+
+  const profile = new Profile(newProfile);
+  console.log(profile);
   profile.save();
   res.render('preferences');
 })
@@ -81,13 +107,7 @@ app.post('/preferences', (req, res) => {
 
 //data ophalen uit server en profiel renderen
 app.post('/breakfast', (req, res) => {
-  try {
-    const profileData = Profile.find({username: "eva"}).lean();
-    res.render('home', {data : profileData[0], title: 'Home - profile'})
-    console.log(profileData);
-  } catch (error) {
-    throw new Error(error);
-  }
+  res.render('home');
 //  console.log(req.body) //checken of hij data ophaalt uit de body
 //  const profile = new Profile(req.body);
 //  profile.save();
