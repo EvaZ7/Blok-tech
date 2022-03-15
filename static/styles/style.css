@@ -7,12 +7,14 @@ html {
 -------HEADER-------
 --------------------*/
 h1 {
+  /*de titel*/
   color: #281915;
   text-align: center;
   font-size: 1.5em;
 }
 
 header {
+  /*header voor home pagina*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -28,6 +30,10 @@ header {
   padding: 1em 0em 0.4em;
   z-index: 2;
   background-color: #9b572c;
+}
+
+nav {
+  /*navigatie voor homepage*/
 }
 
 nav ul {
@@ -46,7 +52,7 @@ nav ul {
           transform: translateX(100%);
 }
 
-nav ul.open {
+nav ul .open {
   /*openen hamburger menu*/
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -71,10 +77,9 @@ nav ul img {
 nav a {
   /*geen underline van linkjes*/
   text-decoration: none;
-  color: #281915;
 }
 
-nav>a img {
+nav > a img {
   /*hamburger menu knop (streepjes)*/
   height: 2em;
   padding-left: 1em;
@@ -84,10 +89,19 @@ nav>a img {
 ------DE FORMS------
 --------------------*/
 form fieldset {
+  /*alle invulvelden in*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-style: none;
 }
 
 form fieldset legend {
+  /*kopjes in de form*/
   color: #281915;
   font-weight: bold;
   font-size: 2em;
@@ -95,12 +109,41 @@ form fieldset legend {
 }
 
 form label {
+  /*namen invulveld*/
   color: #58372a;
+  margin: 1em 0em 1em 0.2em;
 }
 
 form label a {
+  /*terms of service styling*/
   text-decoration: none;
   color: #bb4738;
+}
+
+form input {
+  background-color: #f0c579;
+  border-style: none;
+  border-radius: 0.4em;
+  padding: 0.5em;
+}
+
+form input:focus {
+  background-color: orange;
+  padding: 0.5em;
+}
+
+form button {
+  background-color: #9b572c;
+  padding: 0.5em 1em 0.5em 1em;
+  border-style: solid;
+  border-color: #58372a;
+  border-width: 0em 0em 0.25em 0.25em;
+  border-radius: 0.2em;
+}
+
+form button:hover {
+  background-color: #58372a;
+  border-color: #281915;
 }
 
 /*------------------
@@ -119,14 +162,6 @@ form label a {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0.5em;
-  }
-  header>img {
-    /*Wizardingworld logo*/
-    -ms-grid-column: 2;
-    grid-column: 2;
-    padding-bottom: 0.5em;
-    width: 4.5em;
-    height: auto;
   }
   header nav {
     /*de nav*/

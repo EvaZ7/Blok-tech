@@ -1,163 +1,204 @@
 //sccs file
 
-//var colors 
+//var colors
 $base-color-croissant: #e6a97e;
 $base-color-coffee: #9b572c;
 $base-color-egg: #f0c579;
-$font-color-bacon: #bb4738; 
+$font-color-bacon: #bb4738;
 
 $font-color-headings: #281915;
 $font-color-basic: #58372a;
 
 //var fonts
-$main-font: 'Nunito', sans-serif;
+$main-font: "Nunito", sans-serif;
 
-html{
-    background-color: $base-color-croissant; 
-    font-family: $main-font;
+html {
+  background-color: $base-color-croissant;
+  font-family: $main-font;
 }
 
 /*------------------
 -------HEADER-------
 --------------------*/
 h1 {
-    color: $font-color-headings;
-    text-align: center;
-    font-size: 1.5em;
+  /*de titel*/
+  color: $font-color-headings;
+  text-align: center;
+  font-size: 1.5em;
 }
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  
+header {
+  /*header voor home pagina*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  align-items: center;
+  width: 100%;
+  padding: 1em 0em 0.4em;
+
+  z-index: 2;
+
+  background-color: $base-color-coffee;
+}
+nav {
+  /*navigatie voor homepage*/
+  ul {
+    /*Hamburger menu*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-  
-    align-items: center;
-    width: 100%;
-    padding: 1em 0em 0.4em;
-  
-    z-index: 2;
+    bottom: 0;
 
     background-color: $base-color-coffee;
-}  
-nav {
-    ul{ /*Hamburger menu*/
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      
-        background-color: $base-color-coffee;
-        text-decoration: none;
-      
-        margin: 0;
-        padding-top: 4em;
-        padding: 2em 1em 1em 1em;
-        
-        transform: translateX(100%);
+    text-decoration: none;
 
-        .open{ /*openen hamburger menu*/
-            transform: translateX(0%);
-            max-width: 34em;
-        }
+    margin: 0;
+    padding-top: 4em;
+    padding: 2em 1em 1em 1em;
 
-        li{/*Hamburger menu kopjes*/
-            list-style-type: none;
-            padding: 1em 1.5em 1em 1.5em;
-          
-            font-size: 1.1em;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        img{/*kruisje/sluit menu knop*/
-            width: 2em;
-            height: auto;
-        }
+    transform: translateX(100%);
+
+    .open {
+      /*openen hamburger menu*/
+      transform: translateX(0%);
+      max-width: 34em;
     }
-    a{/*geen underline van linkjes*/
-        text-decoration: none;
+
+    li {
+      /*Hamburger menu kopjes*/
+      list-style-type: none;
+      padding: 1em 1.5em 1em 1.5em;
+
+      font-size: 1.1em;
+      text-transform: uppercase;
+      font-weight: 700;
     }
-    &>a img{ /*hamburger menu knop (streepjes)*/
-      height: 2em;
-      padding-left: 1em;
+    img {
+      /*kruisje/sluit menu knop*/
+      width: 2em;
+      height: auto;
     }
+  }
+  a {
+    /*geen underline van linkjes*/
+    text-decoration: none;
+  }
+  & > a img {
+    /*hamburger menu knop (streepjes)*/
+    height: 2em;
+    padding-left: 1em;
+  }
 }
 
 /*------------------
 ------DE FORMS------
 --------------------*/
-form{
-    fieldset{
-        border-style: none;
-        legend{
-            color: $font-color-headings;
-            font-weight: bold;
-            font-size: 2em;
-            text-align: center;
-        }
+form {
+  fieldset {
+    /*alle invulvelden in*/
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    legend {
+      /*kopjes in de form*/
+      color: $font-color-headings;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
     }
-    label{
-        color: $font-color-basic;
-        a{
-            text-decoration: none;
-            color: $font-color-bacon;
-        }
+  }
+  label {
+    /*namen invulveld*/
+    color: $font-color-basic;
+    margin: 1em 0em 1em 0.2em;
+    a {
+      /*terms of service styling*/
+      text-decoration: none;
+      color: $font-color-bacon;
     }
+  }
+  input {
+      background-color: $base-color-egg;
+
+      border-style: none;
+      border-radius: 0.4em;
+
+      padding: 0.5em;
+  }
+  input:focus {
+    background-color: orange;
+
+    padding: 0.5em;
+  }
+  button {
+      background-color: $base-color-coffee;
+
+      padding: 0.5em 1em 0.5em 1em;
+
+      border-style: solid;
+      border-color: $font-color-basic;
+      border-width: 0em 0em 0.25em 0.25em;
+      border-radius: 0.2em;
+  }
+  button:hover {
+    background-color: $font-color-basic;
+    border-color: $font-color-headings;
+}
 }
 
 /*------------------
 ------RESTYLEN------
 --------------------*/
-@media (min-width:70em) {
-    h1{ 
-      grid-column: 2;
-    }
-    header{
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  
-      padding-top: 0.5em;
+@media (min-width: 70em) {
+  h1 {
+    grid-column: 2;
+  }
+  header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
-      &>img{/*Wizardingworld logo*/
-        grid-column: 2;
-        padding-bottom: 0.5em;
-    
-        width: 4.5em;
-        height: auto;
+    padding-top: 0.5em;
+
+    nav {
+      /*de nav*/
+      justify-self: center;
+      grid-row: 2;
+      grid-column: 1/-1;
+
+      border-top: solid;
+      border-width: 0.01em;
+      border-color: white;
+
+      img {
+        /*de sluit button en hamburger button*/
+        display: none;
       }
-      nav {/*de nav*/
-        justify-self:center;
-        grid-row: 2;
-        grid-column: 1/-1;
-    
-        border-top: solid;
-        border-width: 0.01em;
-        border-color: white;
 
-        img{/*de sluit button en hamburger button*/
-            display: none;
-        }
+      ul {
+        /*de gehele lijst in de nav*/
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        background: none;
 
-        ul {/*de gehele lijst in de nav*/
-            position: static;
-            transform: none; 
-            display: flex;
-            flex-direction: row;
-            padding: 1em;
-            background:none;
-
-            li{/*de kopjes in de nav*/
-                font-size: 0.8em;
-                height: 1em;
-                a{/*de links van de nav*/
-                    width: 1em;
-                }
-            }
+        li {
+          /*de kopjes in de nav*/
+          font-size: 0.8em;
+          height: 1em;
+          a {
+            /*de links van de nav*/
+            width: 1em;
+          }
         }
       }
     }
+  }
 }

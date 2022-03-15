@@ -58,17 +58,14 @@ app.get('/', (req, res) => { //home invoegen, root
   // console.log('avatar');
 });
 
-
-app.get('/home', (req, res) => { //home invoegen, root
-  console.log('Hello World')
+app.get('/home', (req, res) => { //home invoegen
   try {
-    const profileData = Profile.find({username: "eva"});
-    console.log(profileData);
-    res.render('home', {data : profileData[0], title: 'Home - profile'})
+    const profileData = Profile.findOne({username: 'eva'});
+    console.log('profile:', profileData);
+    res.render('home', {profileData})
   } catch (error) {
     throw new Error(error);
   }
-  // console.log('avatar');
 });
 
 //page not found
