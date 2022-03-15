@@ -1,28 +1,17 @@
 <body>
     {{>header}}
 
-<!--Avatar -->
-<img value="Profile.avatar">
-<p>{{profileData.pronouns}}</p>
-<h4>{{Profile.username}}</h4><!--Username -->
-
-<h3>Ideal breakfast</h3><!--ideal breakfast -->
-<article>{{profile.breakfast}}</article>
-
-<h3>Usually wakes up at</h3><!--I usually get up at -->
-<p>{{preferences.wakeuptime}}</p>
-
-<img src= {{profileData.avatar}}>
+<img src= {{profileData.avatar}}><!--avatar invoegen-->
 {{profileData.avatar}}
 <p>{{profileData.pronouns}}</p>
-<h4>{{profileData.username}}</h4><!--Username -->
+<h4>{{profileData.username}}</h4><!--Username-->
 
-<h3>Ideal breakfast</h3><!--ideal breakfast -->
-<article>{{profileData.breakfast}}</article>
+{{!-- <h3>Ideal breakfast</h3><!--ideal breakfast --> --}}
+{{!-- <article>{{profileData.breakfast}}</article><!--ideal breakfast --> --}}
 
-<h3>Usually wakes up at</h3><!--I usually get up at -->
-<p>{{preferences.wakeuptime}}</p>
+{{!-- <h3>Usually wakes up at</h3><!--I usually get up at --> --}}
+{{!-- <p>{{profileData.wakeuptime}}</p> --}}
 
-<button>Delete profile</button>
+<!--<button>Delete profile</button>-->
 <button action="/update"><a href="/update">Update profile</a></button>
 </body>

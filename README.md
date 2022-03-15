@@ -57,6 +57,8 @@ _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
 ### Sources
 
+Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>

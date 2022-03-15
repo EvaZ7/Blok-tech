@@ -16,6 +16,24 @@ html {
   background-color: $base-color-croissant;
   font-family: $main-font;
 }
+button {
+  background-color: $base-color-coffee;
+
+  padding: 0.5em 1em 0.5em 1em;
+
+  border-style: solid;
+  border-color: $font-color-basic;
+  border-width: 0em 0em 0.25em 0.25em;
+  border-radius: 0.2em;
+}
+body>img{
+  margin-top: 10em;
+}
+nav>a img {
+  /*hamburger menu knop (streepjes)*/
+  height: 2em;
+  padding-left: 1em;
+}
 
 /*------------------
 -------HEADER-------
@@ -123,12 +141,12 @@ form {
     }
   }
   input {
-      background-color: $base-color-egg;
+    background-color: $base-color-egg;
 
-      border-style: none;
-      border-radius: 0.4em;
+    border-style: none;
+    border-radius: 0.4em;
 
-      padding: 0.5em;
+    padding: 0.5em;
   }
   input:focus {
     background-color: orange;
@@ -136,19 +154,19 @@ form {
     padding: 0.5em;
   }
   button {
-      background-color: $base-color-coffee;
+    background-color: $base-color-coffee;
 
-      padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em 0.5em 1em;
 
-      border-style: solid;
-      border-color: $font-color-basic;
-      border-width: 0em 0em 0.25em 0.25em;
-      border-radius: 0.2em;
+    border-style: solid;
+    border-color: $font-color-basic;
+    border-width: 0em 0em 0.25em 0.25em;
+    border-radius: 0.2em;
   }
   button:hover {
     background-color: $font-color-basic;
     border-color: $font-color-headings;
-}
+  }
 }
 
 /*------------------

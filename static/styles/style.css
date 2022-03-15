@@ -3,6 +3,19 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
+button {
+  background-color: #9b572c;
+  padding: 0.5em 1em 0.5em 1em;
+  border-style: solid;
+  border-color: #58372a;
+  border-width: 0em 0em 0.25em 0.25em;
+  border-radius: 0.2em;
+}
+
+body>img {
+  margin-top: 10em;
+}
+
 /*------------------
 -------HEADER-------
 --------------------*/
@@ -52,7 +65,7 @@ nav ul {
           transform: translateX(100%);
 }
 
-nav ul .open {
+nav ul.open {
   /*openen hamburger menu*/
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -79,7 +92,7 @@ nav a {
   text-decoration: none;
 }
 
-nav > a img {
+nav>a img {
   /*hamburger menu knop (streepjes)*/
   height: 2em;
   padding-left: 1em;

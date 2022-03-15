@@ -1,22 +1,27 @@
-<body> <!-- form voor invoegen profiel -->
-<form method="post" action="/getstarted" enctype="multipart/form-data">
+<body>
+  <!-- form voor invoegen profiel -->
+  <form method="post" action="/getstarted" enctype="multipart/form-data">
 
-  <fieldset>
-    <legend>Basic startup</legend>
+    <fieldset>
+      <legend>Basic startup</legend>
 
-    <label for="avatar">Select your avatar</label> <!-- avatar invoegen -->
-    <input type="file" name="avatar" id='avatar'>
+      <label for="avatar">Select your avatar</label>
+      <!-- avatar invoegen -->
+      <input type="file" name="avatar" id="avatar" />
 
-    <label for="username">Choose your username</label> <!-- gebruikersnaam kiezen -->
-    <input type="text" name="username" id="username" required>
+      <label for="username">Choose your username</label>
+      <!-- gebruikersnaam kiezen -->
+      <input type="text" name="username" id="username" required />
 
-    <label for="username">Choose your pronouns</label> <!-- voornaamwoorden uitkiezen -->
-    <input type="text" name="pronouns" required>
-  </fieldset>
+      <label for="username">Choose your pronouns</label>
+      <!-- voornaamwoorden uitkiezen -->
+      <input type="text" name="pronouns" required />
+    </fieldset>
 
-  <label for="terms">I agree with the <a href="#">terms of service</a></label> <!-- Uitkiezen voornaamwoorden -->
-	<input type="checkbox" name="terms_conditions" required>
+    <label for="terms">I agree with the <a href="#">terms of service</a></label>
+    <!-- Uitkiezen voornaamwoorden -->
+    <input type="checkbox" name="terms_conditions" required />
 
-	<button type="submit">Continue</button>
-</form>
+    <button type="submit">Continue</button>
+  </form>
 </body>
