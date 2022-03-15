@@ -74,7 +74,7 @@ app.post('/update', async(req, res) => { //update/change profile
     const update = { pronouns: req.body.pronouns};
     const profileDataupdate = await Profile.findOneAndUpdate(filter, update).lean(); //vinden en updaten
     const profileData = await Profile.findOne({username: 'evaz'}).lean(); //vinden profile
-    console.log('profile:', profileDataupdate, profileData); //
+    console.log('profile:', profileDataupdate, profileData);
     res.render('home', {profileDataupdate, profileData})
   } catch (error) {
     throw new Error(error);
@@ -125,7 +125,14 @@ app.post('/preferences', (req, res) => {
 })
 
 //data ophalen uit server en profiel renderen
-app.post('/breakfast', (req, res) => {
+app.post('/breakfast', async(req, res) => {
+    try {
+    const profileData = await Profile.findOne({username: 'evaz'}).lean();
+    console.log('profile:', profileData);
+    res.render('home', {profileData})
+  } catch (error) {
+    throw new Error(error);
+  }
   res.render('home');
 //  console.log(req.body) //checken of hij data ophaalt uit de body
 //  const profile = new Profile(req.body);
