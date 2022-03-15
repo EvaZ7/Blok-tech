@@ -58,20 +58,42 @@ app.get('/', (req, res) => { //home invoegen, root
   // console.log('avatar');
 });
 
-app.get('/home', (req, res) => { //home invoegen
+app.get('/update', async(req, res) => { //update/change profile
   try {
-    const profileData = Profile.findOne({username: 'eva'});
+    const profileData = await Profile.findOne({username: 'evaz'}).lean();
+    console.log('profile:', profileData);
+    res.render('update', {profileData})
+  } catch (error) {
+    throw new Error(error);
+  }
+});
+
+app.post('/update', async(req, res) => { //update/change profile
+  try {
+    const filter = { username: 'evaz' };
+    const update = { pronouns: req.body.pronouns};
+    const profileDataupdate = await Profile.findOneAndUpdate(filter, update).lean(); //vinden en updaten
+    const profileData = await Profile.findOne({username: 'evaz'}).lean(); //vinden profile
+    console.log('profile:', profileDataupdate, profileData); //
+    res.render('home', {profileDataupdate, profileData})
+  } catch (error) {
+    throw new Error(error);
+  }
+});
+
+app.get('/home', async(req, res) => { //home invoegen en data uit db ophalen en invoegen
+  try {
+    const profileData = await Profile.findOne({username: 'evaz'}).lean();
     console.log('profile:', profileData);
     res.render('home', {profileData})
   } catch (error) {
     throw new Error(error);
   }
 });
-
 //page not found
  app.get('*', (req, res) => { 
-  //res.send('Not found')
-  res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
+  res.send('Not found')
+  //res.sendFile('/Users/evazaadnoordijk/Blok-tech/static/media/404giphy.gif');
  })
 
 // sturen profile naar database en ga naar preferences

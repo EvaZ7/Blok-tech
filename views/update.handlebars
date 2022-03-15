@@ -1,0 +1,12 @@
+<body>
+    <form method="post" action="/update">
+    <fieldset>
+    <legend>Basic startup</legend>
+
+    <label for="username">Change your pronouns, current: {{profileData.pronouns}}</label> <!-- voornaamwoorden uitkiezen -->
+    <input type="text" name="pronouns" value="{{profileData.pronouns}}">
+    </fieldset>
+
+    <button type="submit" value="opslaan">save</button>
+    </form>
+</body>
