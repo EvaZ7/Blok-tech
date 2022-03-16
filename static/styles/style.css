@@ -16,6 +16,17 @@ body>img {
   margin-top: 10em;
 }
 
+nav>a img {
+  /*hamburger menu knop (streepjes)*/
+  height: 2em;
+  padding-left: 1em;
+}
+
+button>a {
+  text-decoration: none;
+  color: #281915;
+}
+
 /*------------------
 -------HEADER-------
 --------------------*/
@@ -90,6 +101,7 @@ nav ul img {
 nav a {
   /*geen underline van linkjes*/
   text-decoration: none;
+  color: #281915;
 }
 
 nav>a img {

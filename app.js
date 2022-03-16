@@ -38,6 +38,7 @@ connectDB();
 //Schema's
 const Profile = require("./modals/profile");
 const Preference = require("./modals/preference");
+const Breakfast = require("./modals/breakfast");
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 1378;
@@ -132,8 +133,11 @@ app.post("/preferences", (req, res) => {
 
 //data ophalen uit server en profiel renderen
 app.post("/breakfast", async (req, res) => {
+  const breakfast = new Breakfast(req.body);
+  breakfast.save();
+  
   const profileData = await Profile.findOne({ username: "evaz" }).lean();
-  res.render("home", profileData);
+  res.render("home", {profileData});
   //  console.log(req.body) //checken of hij data ophaalt uit de body
   //  const profile = new Profile(req.body);
   //  profile.save();

@@ -59,6 +59,10 @@ _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
 Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
 
+Tse, T. (2017, 15 februari). What is Progressive Enhancement and Why Should You Care? Shopify. Geraadpleegd op 16 maart 2022, van <https://www.shopify.com/partners/blog/what-is-progressive-enhancement-and-why-should-you-care>
+
+Kumar, R. (2021, 23 juni). A Beginner’s Guide to Handlebars - SitePoint. Sitepoint. Geraadpleegd op 16 maart 2022, van <https://www.sitepoint.com/a-beginners-guide-to-handlebars/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
