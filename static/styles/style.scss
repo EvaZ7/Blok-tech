@@ -27,6 +27,7 @@ button {
   border-radius: 0.2em;
 }
 body>img{
+  /*avatar*/
   margin-top: 10em;
 }
 nav>a img {
@@ -34,7 +35,8 @@ nav>a img {
   height: 2em;
   padding-left: 1em;
 }
-button>a{
+button>a{ 
+  /*Kleur buttons*/
   text-decoration: none;
   color: $font-color-headings;
 }
