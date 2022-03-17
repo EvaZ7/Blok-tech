@@ -4,27 +4,27 @@ _Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
 
 ## Algemene opbouw
 
-- _About_ Why is this project useful?
-- _Features_ What does this project do?
-- _Want to Contribute?_ How do I get started?
-- _Credits_ 
-- _Support_ Where can I get more help, if I need it?
--_Sources_ Apa list of resources I used.
+- _Over het project_ Waarom is dit project nuttig?
+- _Wat doet het?_ Wat houd het project in en doet het?
+- _Meehelpen?_ Hoe begin ik?
+- _Auteur_ Dit project is gemaakt door...
+- _Hulp_ Waar kan ik om hulp vragen, als ik het niet snap?
+-_Bronnen_ Apa lijst met gebruikte bronnen.
 
-### About
+### Over het project
 
 Met dit project intoduceer in een nieuwe manier van matchen in de wereld van standaard matching applicaties, namelijk mensen samen laten ontbijten op basis van hun persoonlijke ontbijtvoorkeuren. Mijn doelgroep is dan ook ochtendmensen die graag ontbijten en dit eens met iemand willen doen.
 _Dit project zal daarnaast als basis dienen voor een gezamlijk project waarmee we uiteindelijk onze krachten zullen bundelen en een applicatie neerzetten_
 
-### Features
+### Wat doet het?
 
 In dit project ga ik een deel van een applicatie uitwerken voor een matching app. Dit deel zal het kunnen aanmaken van een profiel zijn. Wat de gebruiker invult aan persoonlijke voorkeuren en zijn of haar ontbijt zal worden verwerkt en uiteindelijk op het profiel zichtbaar zijn.
 
-### Want to contribute
+### Meehelpen?
 
 Dien een issue in om suggesties te kunnen geven of praat mee met een pull request. Feedback is altijd welkom.
 
-#### Get started
+#### Zo begin je
 
 **In de CLI volg de volgende stappen:**
 
@@ -46,16 +46,16 @@ npm install
 npm run start
 ```
 
-### Credits
+### Auteur
 
 Credits naar mij, Eva Zaadnoordijk (500847567) 2022 voor communication and multimedia design aan de HvA.
 
-### Support
+### Hulp
 
 Snap je het niet stuur een mail naar:
 _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
-### Sources
+### Bronnen
 
 Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
 
@@ -67,6 +67,6 @@ Kumar, R. (2021, 23 juni). A Beginner’s Guide to Handlebars - SitePoint. Sitep
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
 
-#### Images
+#### Afbeeldingen
 
 Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wizarding World: The Official Home of Harry Potter. Geraadpleegd op 9 maart 2022, van <https://www.wizardingworld.com/>
