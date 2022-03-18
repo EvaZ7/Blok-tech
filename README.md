@@ -1,7 +1,7 @@
 # Blok-tech Ontbijtje
 
 _Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+<https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square>
 
 ## Algemene opbouw
 
@@ -29,19 +29,19 @@ Dien een issue in om suggesties te kunnen geven of praat mee met een pull reques
 
 **In de CLI volg de volgende stappen:**
 
-1. Clone mijn GitHub repository
+1; Clone mijn GitHub repository
 
 ```sh
 git clone https://github.com/EvaZ7/Blok-tech.git
 ```
 
-2. Installeer de basis npm packages
+2; Installeer de basis npm packages
 
 ```sh
 npm install
 ```
 
-3. Start lokaal de server op
+3; Start lokaal de server op
 
 ```sh
 npm run start
