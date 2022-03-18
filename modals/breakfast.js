@@ -31,7 +31,7 @@ const breakfastSchema = new mongoose.Schema({
   },
   sandwich: {
     type: String,
-  }
+  },
 });
 
 const Breakfast = mongoose.model("Breakfast", breakfastSchema);

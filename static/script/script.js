@@ -3,7 +3,8 @@ var hamburgerButton = document.querySelector("nav>a");
 var nav = document.querySelector("nav ul");
 var kruisButton = document.querySelector("nav li:first-of-type a");
 
-hamburgerButton.addEventListener( //openen hamburgermenu
+hamburgerButton.addEventListener(
+  //openen hamburgermenu
   "click",
   function () {
     nav.classList.toggle("open");
@@ -11,7 +12,8 @@ hamburgerButton.addEventListener( //openen hamburgermenu
   false
 );
 
-kruisButton.addEventListener( //sluiten hamburgermenu
+kruisButton.addEventListener(
+  //sluiten hamburgermenu
   "click",
   function () {
     nav.classList.toggle("open");

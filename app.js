@@ -135,9 +135,9 @@ app.post("/preferences", (req, res) => {
 app.post("/breakfast", async (req, res) => {
   const breakfast = new Breakfast(req.body);
   breakfast.save();
-  
+
   const profileData = await Profile.findOne({ username: "evaz" }).lean();
-  res.render("home", {profileData});
+  res.render("home", { profileData });
   //  console.log(req.body) //checken of hij data ophaalt uit de body
   //  const profile = new Profile(req.body);
   //  profile.save();
