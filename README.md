@@ -1,7 +1,7 @@
 # Blok-tech Ontbijtje
 
 _Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
-[https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square]
+![GitHub](https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square)
 
 ## Algemene opbouw
 
