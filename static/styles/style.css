@@ -12,9 +12,28 @@ button {
   border-radius: 0.2em;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body > img {
   /*avatar*/
   margin-top: 10em;
+}
+
+img.logo {
+  /*logo*/
+  margin: 0;
+  max-width: 8em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 nav > a img {
@@ -44,14 +63,14 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 1em 0em 0.4em;
   z-index: 2;
@@ -75,13 +94,13 @@ nav ul {
   padding-top: 4em;
   padding: 2em 1em 1em 1em;
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-nav ul.open {
+nav ul .open {
   /*openen hamburger menu*/
   -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+          transform: translateX(0%);
   max-width: 34em;
 }
 
@@ -115,6 +134,16 @@ nav > a img {
 /*------------------
 ------DE FORMS------
 --------------------*/
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 form fieldset {
   /*alle invulvelden in*/
   display: -webkit-box;
@@ -122,8 +151,8 @@ form fieldset {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-style: none;
 }
 
@@ -152,6 +181,7 @@ form input {
   border-style: none;
   border-radius: 0.4em;
   padding: 0.5em;
+  max-width: 22em;
 }
 
 form input:focus {
@@ -185,15 +215,15 @@ form button:hover {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0.5em;
   }
   header nav {
     /*de nav*/
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
     -ms-grid-row: 2;
     grid-row: 2;
     grid-column: 1/-1;
@@ -209,14 +239,14 @@ form button:hover {
     /*de gehele lijst in de nav*/
     position: static;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 1em;
     background: none;
   }
