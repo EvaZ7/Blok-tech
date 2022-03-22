@@ -8,7 +8,7 @@
 
       <label for="avatar">Select your avatar</label>
       <!-- avatar invoegen -->
-      <input type="file" name="avatar" id="avatar" />
+      <input type="file" name="avatar" id="avatar" required/>
 
       <label for="username">Choose your username</label>
       <!-- gebruikersnaam kiezen -->
@@ -18,10 +18,12 @@
       <!-- voornaamwoorden uitkiezen -->
       <input type="text" name="pronouns" required />
     </fieldset>
-
-    <label for="terms">I agree with the <a href="#">terms of service</a></label>
-    <!-- Uitkiezen voornaamwoorden -->
+    
+    <fieldset class="terms">
+      <!-- Uitkiezen voornaamwoorden -->
     <input type="checkbox" name="terms_conditions" required />
+    <label for="terms">I agree with the <a href="#">terms of service</a></label>
+    </fieldset>
 
     <button type="submit">Continue</button>
   </form>

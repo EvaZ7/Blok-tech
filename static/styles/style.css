@@ -3,15 +3,6 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
-button {
-  background-color: #9b572c;
-  padding: 0.5em 1em 0.5em 1em;
-  border-style: solid;
-  border-color: #58372a;
-  border-width: 0em 0em 0.25em 0.25em;
-  border-radius: 0.2em;
-}
-
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,20 +11,40 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  /*alle buttons*/
+  background-color: #9b572c;
+  padding: 0.5em 1em 0.5em 1em;
+  border-style: solid;
+  border-color: #58372a;
+  border-width: 0em 0em 0.25em 0.25em;
+  border-radius: 0.2em;
+  max-width: 10em;
 }
 
 body > img {
   /*avatar*/
   margin-top: 10em;
+  max-width: 8em;
+  border: 0.2em;
+  border-style: solid;
+  border-color: #bb4738;
+  border-radius: 5em;
 }
 
 img.logo {
   /*logo*/
   margin: 0;
-  max-width: 8em;
+  max-width: 10em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: none;
 }
 
 nav > a img {
@@ -135,13 +146,18 @@ nav > a img {
 ------DE FORMS------
 --------------------*/
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form fieldset {
@@ -201,6 +217,21 @@ form button {
 form button:hover {
   background-color: #58372a;
   border-color: #281915;
+}
+
+fieldset.terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+fieldset.terms input {
+  margin-top: 1.5em;
+  padding: 1em;
 }
 
 /*------------------

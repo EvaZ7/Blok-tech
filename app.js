@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const multer = require("multer");
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "./uploads");
+    cb(null, "./static/uploads");
   },
   filename: function (req, file, callback) {
     callback(null, file.fieldname + "-" + Date.now() + file.originalname);
@@ -56,6 +56,12 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   //home invoegen, root
   res.render("getstarted");
+  // console.log('avatar');
+});
+
+app.get("/preferences", (req, res) => { // REMOVE THIS LATER PLZ
+  //home invoegen, root
+  res.render("preferences");
   // console.log('avatar');
 });
 

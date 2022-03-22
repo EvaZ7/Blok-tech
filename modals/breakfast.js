@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
 const breakfastSchema = new mongoose.Schema({
   coffee: {
@@ -32,6 +33,8 @@ const breakfastSchema = new mongoose.Schema({
   sandwich: {
     type: String,
   },
+  preferences: { type: Schema.Types.ObjectId, ref: 'Preference' },
+  breakfast: [{ type: Schema.Types.ObjectId, ref: 'profile' }],
 });
 
 const Breakfast = mongoose.model("Breakfast", breakfastSchema);
