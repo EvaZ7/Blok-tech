@@ -1,11 +1,12 @@
 //sccs file
 
 //var colors
+$background-color: #face98;
 $base-color-croissant: #e6a97e;
 $base-color-coffee: #9b572c;
 $base-color-egg: #f0c579;
-$font-color-bacon: #bb4738;
 
+$font-color-bacon: #bb4738;
 $font-color-headings: #281915;
 $font-color-basic: #58372a;
 
@@ -13,7 +14,7 @@ $font-color-basic: #58372a;
 $main-font: "Nunito", sans-serif;
 
 html {
-  background-color: $base-color-croissant;
+  background-color: $background-color;
   font-family: $main-font;
 }
 body {
@@ -25,15 +26,16 @@ body {
 button {
   /*alle buttons*/
   background-color: $base-color-coffee;
+  color: black;
 
   padding: 0.5em 1em 0.5em 1em;
+  max-width: 10em;
+  font-size: 1em;
 
   border-style: solid;
   border-color: $font-color-basic;
   border-width: 0em 0em 0.25em 0.25em;
   border-radius: 0.2em;
-
-  max-width: 10em;
 }
 
 body > img {
@@ -153,18 +155,35 @@ form {
   flex-direction: column;
   align-self: center;
   align-items: center;
+
+  background-color: $base-color-croissant;
+
+  border-radius: 2em;
+  padding: 1em;
+
   fieldset {
     /*alle invulvelden in*/
     display: flex;
     flex-direction: column;
     border-style: none;
+    align-items: center;
+    max-width: 18em;
     legend {
       /*kopjes in de form*/
       color: $font-color-headings;
       font-weight: bold;
       font-size: 2em;
       text-align: center;
+      max-width: 12em;
     }
+  }
+  fieldset.checkboxes {
+    /*checkboxes aan het begin zetten*/
+    align-items: flex-start;
+  }
+  fieldset.checkboxes p{
+    /*checkboxes weer in het midden zetten*/
+    padding-left: 4.5em;
   }
   label {
     /*namen invulveld*/
@@ -186,8 +205,12 @@ form {
 
     max-width: 22em;
   }
+  input[type=text]{
+    /*input voor tekst*/
+    width: 20em;
+  }
   input:focus {
-    background-color: orange;
+    background-color: $base-color-coffee;
 
     padding: 0.5em;
   }
@@ -206,21 +229,17 @@ form {
     border-color: $font-color-headings;
   }
 }
-fieldset.terms{
-  display: flex;
-  flex-direction: row;
 
-  input{
-    margin-top: 1.5em;
-
-    padding: 1em;
-  }
-}
 
 /*------------------
 ------RESTYLEN------
 --------------------*/
 @media (min-width: 70em) {
+  body {
+    background-image: url(/static/media/background.png);
+    background-position: 0;
+    background-size: 100%;
+  }
   h1 {
     grid-column: 2;
   }

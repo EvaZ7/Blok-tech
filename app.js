@@ -65,6 +65,12 @@ app.get("/preferences", (req, res) => { // REMOVE THIS LATER PLZ
   // console.log('avatar');
 });
 
+app.get("/breakfast", (req, res) => { // REMOVE THIS LATER PLZ
+  //home invoegen, root
+  res.render("breakfast");
+  // console.log('avatar');
+});
+
 app.get("/update", async (req, res) => {
   //update/change profile
   try {
