@@ -33,8 +33,7 @@ const profileSchema = new mongoose.Schema({
   avatar: {
     type: String,
     avatar: String,
-  },
-  // children: [preferenceSchema]
+  }
 });
 
 const Profile = mongoose.model("Profile", profileSchema);

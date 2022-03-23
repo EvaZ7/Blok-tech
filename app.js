@@ -136,7 +136,7 @@ app.post("/getstarted", upload.single("avatar"), (req, res) => {
 });
 
 //derde pagina posten
-app.post("/preferences", (req, res) => {
+app.post("/preferences", async (req, res) => {
   //  console.log(req.body) //checken of hij data ophaalt uit de body
   const preference = new Preference(req.body);
   preference.save();

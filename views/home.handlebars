@@ -1,9 +1,32 @@
 <body>
     {{>header}}
 
+<section>
 <img src="../static/uploads/{{profileData.avatar}}"><!--avatar invoegen-->
 <p>{{profileData.pronouns}}</p>
-<h4>{{profileData.username}}</h4><!--Username-->
+<h2>{{profileData.username}}</h2><!--Username-->
+</section>
+
+<section>
+    <h3>Ideal breakfast</h3>
+    <article>
+        <img src="/static/media/coffee-03.png" alt="coffee">
+        <p>Coffee</p>
+    </article>
+    <article>
+        <img src="/static/media/croissant-02.png" alt="croissant">
+        <p>Croissant</p>
+    </article>
+    <article>
+        <img src="/static/media/toast-04.png" alt="toast">
+        <p>Toast</p>
+    </article>
+</section>
+
+<section>
+    <h3>Usually wakes up at</h3>
+    <time datetime="08:00">08:00</time>
+</section>
 
 {{!-- <h3>Ideal breakfast</h3><!--ideal breakfast --> --}}
 {{!-- <article>{{profileData.breakfast}}</article><!--ideal breakfast --> --}}

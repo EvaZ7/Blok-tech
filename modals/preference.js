@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+// var Schema = mongoose.Schema;
 
 const preferenceSchema = new mongoose.Schema({
   wakeuptime: {
@@ -17,6 +18,7 @@ const preferenceSchema = new mongoose.Schema({
   other: {
     type: String,
   },
+  // profile: { type: Schema.Types.ObjectId, ref: 'Profile' }
 });
 
 const Preference = mongoose.model("Preference", preferenceSchema);

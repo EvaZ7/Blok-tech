@@ -16,6 +16,19 @@ body {
           align-items: center;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 button {
   /*alle buttons*/
   background-color: #9b572c;
@@ -29,7 +42,52 @@ button {
   border-radius: 0.2em;
 }
 
-body > img {
+article {
+  /*for breakfast types*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6a97e;
+  width: 5em;
+  border-width: 0em 0em 0.2em 0.2em;
+  border-style: solid;
+  border-color: #bb4738;
+  border-radius: 0.5em;
+}
+
+article img {
+  /*for breakfast types images*/
+  max-width: 4em;
+}
+
+section:nth-of-type(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section:nth-of-type(2) h3 {
+  /*ideal breakfast kopje*/
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+body section > img {
   /*avatar*/
   margin-top: 10em;
   max-width: 8em;
@@ -225,6 +283,16 @@ form input {
 form input[type=text] {
   /*input voor tekst*/
   width: 20em;
+}
+
+form input[type=checkbox] {
+  /*input voor tekst*/
+  cursor: pointer;
+}
+
+form input[type=checkbox]:checked {
+  /*input voor tekst*/
+  background-color: #bb4738;
 }
 
 form input:focus {
