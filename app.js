@@ -56,7 +56,6 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   //home invoegen, root
   res.render("getstarted");
-  // console.log('avatar');
 });
 
 app.get("/preferences", (req, res) => { // REMOVE THIS LATER PLZ
