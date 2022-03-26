@@ -67,6 +67,10 @@ Kumar, R. (2021, 23 juni). A Beginner’s Guide to Handlebars - SitePoint. Sitep
 
 GeeksforGeeks. (2021, 18 oktober). Top 12 Most Used Git Commands For Developers. Geraadpleegd op 26 maart 2022, van <https://www.geeksforgeeks.org/top-12-most-used-git-commands-for-developers/>
 
+Chandak, G. (2021, 5 december). How to Write Meaningful Variable Names? | Writing Clean Code. Workattech. Geraadpleegd op 26 maart 2022, van <https://workat.tech/machine-coding/tutorial/writing-meaningful-variable-names-clean-code-za4m83tiesy0>
+
+McDermott, R. (z.d.). GitHub - ryanmcdermott/clean-code-javascript: Clean Code concepts adapted for JavaScript. GitHub. Geraadpleegd op 26 maart 2022, van <https://github.com/ryanmcdermott/clean-code-javascript#openclosed-principle-ocp>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
