@@ -1,5 +1,7 @@
 # Blok-tech Ontbijtje
 
+[[https://github.com/EvaZ7/Blok-tech/blob/d2580586a53f2fce6565bd7c409c07c94cd449b6/static/media/logo.png]]
+
 _Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
 
 <!--![GitHub](https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square)-->
