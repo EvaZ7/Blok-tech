@@ -77,6 +77,10 @@ Eernisse, M. (z.d.). EJS -- Embedded JavaScript templates. EJS. Geraadpleegd op 
 
 Pug. (z.d.). GitHub - pugjs/pug: Pug – robust, elegant, feature rich template engine for Node.js. GitHub. Geraadpleegd op 26 maart 2022, van <https://github.com/pugjs/pug>
 
+MySQL. (z.d.). MySQL :: MySQL Documentation. Geraadpleegd op 26 maart 2022, van <https://dev.mysql.com/doc/>
+
+Amazon Web Services. (z.d.). Fully Managed Relational Database - Amazon RDS - Amazon Web Services. Amazon Web Services, Inc. Geraadpleegd op 26 maart 2022, van <https://aws.amazon.com/rds/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
