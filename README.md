@@ -83,6 +83,10 @@ Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wiz
 
 comics-meme. (z.d.). Ð¡omics meme: “git add . git commit git push development” - Comics - Meme-arsenal.com. meme-arsenal. Geraadpleegd op 26 maart 2022, van <https://www.meme-arsenal.com/en/create/meme/4833602>
 
+ESLint. (z.d.). ESLint. Geraadpleegd op 26 maart 2022, van <https://eslint.org/>
+
+Markdownlint. (z.d.). markdownlint - Visual Studio Marketplace. Visual Studio Marketplace. Geraadpleegd op 26 maart 2022, van <https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
+
 앤. (2019, 15 september). VScode Code Formater 인 Prettier 완벽 적용하기. UX ê3µìì. Geraadpleegd op 26 maart 2022, van <https://uxgjs.tistory.com/150>
 
 Stylus. (z.d.). Expressive, dynamic, robust CSS — expressive, robust, feature-rich CSS preprocessor. Geraadpleegd op 26 maart 2022, van <https://stylus-lang.com/>
