@@ -71,6 +71,8 @@ Chandak, G. (2021, 5 december). How to Write Meaningful Variable Names? | Writin
 
 McDermott, R. (z.d.). GitHub - ryanmcdermott/clean-code-javascript: Clean Code concepts adapted for JavaScript. GitHub. Geraadpleegd op 26 maart 2022, van <https://github.com/ryanmcdermott/clean-code-javascript#openclosed-principle-ocp>
 
+Stylelint. (z.d.). Home | Stylelint. Geraadpleegd op 26 maart 2022, van <https://stylelint.io/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
