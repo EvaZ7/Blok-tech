@@ -73,6 +73,10 @@ McDermott, R. (z.d.). GitHub - ryanmcdermott/clean-code-javascript: Clean Code c
 
 Stylelint. (z.d.). Home | Stylelint. Geraadpleegd op 26 maart 2022, van <https://stylelint.io/>
 
+Eernisse, M. (z.d.). EJS -- Embedded JavaScript templates. EJS. Geraadpleegd op 26 maart 2022, van <https://ejs.co/#about>
+
+Pug. (z.d.). GitHub - pugjs/pug: Pug – robust, elegant, feature rich template engine for Node.js. GitHub. Geraadpleegd op 26 maart 2022, van <https://github.com/pugjs/pug>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
