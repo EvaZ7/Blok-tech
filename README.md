@@ -65,6 +65,8 @@ Tse, T. (2017, 15 februari). What is Progressive Enhancement and Why Should You 
 
 Kumar, R. (2021, 23 juni). A Beginner’s Guide to Handlebars - SitePoint. Sitepoint. Geraadpleegd op 16 maart 2022, van <https://www.sitepoint.com/a-beginners-guide-to-handlebars/>
 
+GeeksforGeeks. (2021, 18 oktober). Top 12 Most Used Git Commands For Developers. Geraadpleegd op 26 maart 2022, van <https://www.geeksforgeeks.org/top-12-most-used-git-commands-for-developers/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
@@ -72,3 +74,5 @@ Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op
 #### Afbeeldingen
 
 Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wizarding World: The Official Home of Harry Potter. Geraadpleegd op 9 maart 2022, van <https://www.wizardingworld.com/>
+
+comics-meme. (z.d.). Ð¡omics meme: “git add . git commit git push development” - Comics - Meme-arsenal.com. meme-arsenal. Geraadpleegd op 26 maart 2022, van <https://www.meme-arsenal.com/en/create/meme/4833602>
