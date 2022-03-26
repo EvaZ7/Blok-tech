@@ -81,6 +81,8 @@ MySQL. (z.d.). MySQL :: MySQL Documentation. Geraadpleegd op 26 maart 2022, van 
 
 Amazon Web Services. (z.d.). Fully Managed Relational Database - Amazon RDS - Amazon Web Services. Amazon Web Services, Inc. Geraadpleegd op 26 maart 2022, van <https://aws.amazon.com/rds/>
 
+GeeksforGeeks. (2021, december 13). 7 JavaScript Concepts That Every Web Developer Should Know. Geraadpleegd op 26 maart 2022, van <https://www.geeksforgeeks.org/7-javascript-concepts-that-every-developer-must-know/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
