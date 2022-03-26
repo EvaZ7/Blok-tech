@@ -98,3 +98,7 @@ Markdownlint. (z.d.). markdownlint - Visual Studio Marketplace. Visual Studio Ma
 앤. (2019, 15 september). VScode Code Formater 인 Prettier 완벽 적용하기. UX ê3µìì. Geraadpleegd op 26 maart 2022, van <https://uxgjs.tistory.com/150>
 
 Stylus. (z.d.). Expressive, dynamic, robust CSS — expressive, robust, feature-rich CSS preprocessor. Geraadpleegd op 26 maart 2022, van <https://stylus-lang.com/>
+
+MongoDB. (z.d.). MongoDB: The Application Data Platform. Geraadpleegd op 26 maart 2022, van <https://www.mongodb.com/>
+
+Mongoose. (z.d.). Mongoose ODM v6.2.8. Mongoose ODM. Geraadpleegd op 26 maart 2022, van https://mongoosejs.com/
