@@ -85,6 +85,8 @@ Amazon Web Services. (z.d.). Fully Managed Relational Database - Amazon RDS - Am
 
 GeeksforGeeks. (2021, december 13). 7 JavaScript Concepts That Every Web Developer Should Know. Geraadpleegd op 26 maart 2022, van <https://www.geeksforgeeks.org/7-javascript-concepts-that-every-developer-must-know/>
 
+CBEAMS, C. (2021, 27 januari). How to Write a Git Commit Message. Cbeams. Geraadpleegd op 26 maart 2022, van <https://cbea.ms/git-commit/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
