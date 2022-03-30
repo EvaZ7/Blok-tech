@@ -86,13 +86,11 @@ app.post("/update", async (req, res) => {
   try {
     const filter = { username: "evaz" };
     const update = { pronouns: req.body.pronouns };
-    const profileDataupdate = await Profile.findOneAndUpdate(
-      filter,
-      update
-    ).lean(); //vinden en updaten
+    await Profile.findOneAndUpdate(filter, update).lean(); //vinden en updaten
+    
     const profileData = await Profile.findOne({ username: "evaz" }).lean(); //vinden profile
-    console.log("profile:", profileDataupdate, profileData); //
-    res.render("home", { profileDataupdate, profileData });
+    console.log("profile:", profileData);
+    res.render("home", { profileData });
   } catch (error) {
     throw new Error(error);
   }

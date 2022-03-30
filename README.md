@@ -2,64 +2,64 @@
 
 [[https://github.com/EvaZ7/Blok-tech/blob/d2580586a53f2fce6565bd7c409c07c94cd449b6/static/media/logo.png]]
 
-_Hoiii, mijn naam is Eva en welkom bij mijn read.me voor blok tech!_
+_Hiii, my name is Eva and welcome to my readme for cluster tech!_
 
 <!--![GitHub](https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square)-->
 
-## Algemene opbouw
+## Contents
 
-- _Over het project_ Waarom is dit project nuttig?
-- _Wat doet het?_ Wat houd het project in en doet het?
-- _Meehelpen?_ Hoe begin ik?
-- _Auteur_ Dit project is gemaakt door...
-- _Hulp_ Waar kan ik om hulp vragen, als ik het niet snap?
--_Bronnen_ Apa lijst met gebruikte bronnen.
+- _About this project_ Why is it useful?
+- _What does it?_ What is it all about and how does it work?
+- _Want to contribute?_ How do I start?
+- _Author_ This project is made by...
+- _Help_ Where do I find help?
+- _Sources_ APA list with used sources.
 
-### Over het project
+### About this project
 
-Met dit project intoduceer in een nieuwe manier van matchen in de wereld van standaard matching applicaties, namelijk mensen samen laten ontbijten op basis van hun persoonlijke ontbijtvoorkeuren. Mijn doelgroep is dan ook ochtendmensen die graag ontbijten en dit eens met iemand willen doen.
-_Dit project zal daarnaast als basis dienen voor een gezamlijk project waarmee we uiteindelijk onze krachten zullen bundelen en een applicatie neerzetten_
+With this project I would like to introduce a new way of matching in the world of matching applications. Which is lettiing people eat breakfast together based on their personal preferences. My target audience for this project is people who love to eat breakfast in the morning and prefer the compagny of someone while doing this.
+_This project will serve as a part of a group project in which we will combine our projects and work together to turn them into one application_
 
-### Wat doet het?
+### What does it?
 
-In dit project ga ik een deel van een applicatie uitwerken voor een matching app. Dit deel zal het kunnen aanmaken van een profiel zijn. Wat de gebruiker invult aan persoonlijke voorkeuren en zijn of haar ontbijt zal worden verwerkt en uiteindelijk op het profiel zichtbaar zijn.
+With this project I am going to create a part of an application for a matching app. This part is going to be the setup of a user profile. Every piece of information that the user fills in will be gathered and eventually be displayed on their profile page.
 
-### Meehelpen?
+### Want to contribute?
 
-Dien een issue in om suggesties te kunnen geven of praat mee met een pull request. Feedback is altijd welkom.
+Create and issue to give suggestions or discuss an pull request with me. Feedback is always welcome!
 
-#### Zo begin je
+#### How do I start?
 
-**In de CLI volg de volgende stappen:**
+**To install the project, follow these steps:**
 
-1; Clone mijn GitHub repository
+1; Clone my github repository
 
 ```sh
 git clone https://github.com/EvaZ7/Blok-tech.git
 ```
 
-2; Installeer de basis npm packages
+2; Install the npm packages
 
 ```sh
 npm install
 ```
 
-3; Start lokaal de server op
+3; Start the server locally
 
 ```sh
 npm run start
 ```
 
-### Auteur
+### Author
 
-Credits naar mij, Eva Zaadnoordijk (500847567) 2022 voor communication and multimedia design aan de HvA.
+Credits to me, Eva Zaadnoordijk (500847567) 2022 for Communication and Multimedia Design at the Amsterdam University of Applied Sciences.
 
-### Hulp
+### Help
 
-Snap je het niet stuur een mail naar:
+Are some parts still a bit confusing? Feel free to contact me at:
 _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
-### Bronnen
+### Sources
 
 Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
 
@@ -91,7 +91,7 @@ CBEAMS, C. (2021, 27 januari). How to Write a Git Commit Message. Cbeams. Geraad
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
 
-#### Afbeeldingen
+#### Images
 
 Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wizarding World: The Official Home of Harry Potter. Geraadpleegd op 9 maart 2022, van <https://www.wizardingworld.com/>
 
