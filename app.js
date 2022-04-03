@@ -106,9 +106,17 @@ app.get("/home", async (req, res) => {
 
     const time = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"); //api ophalen
     const body = await time.json(); //response json method
+
+    const recipe = await fetch("https://breakfastapi.fun/"); //api ophalen
+    const string = await recipe.json(); //response json method
     //console.log(body.time);
+    //console.log(string.recipe);
+
+    const nameString = (string.recipe.name);
+    const ingredientString = (string.recipe.ingredients);
+    const directionsString = (string.recipe.directions);
     const timeString = (body.time);
-    res.render("home", { profileData, timeString });
+    res.render("home", { profileData, timeString, nameString, ingredientString, directionsString });
   } catch (error) {
     throw new Error(error);
   }

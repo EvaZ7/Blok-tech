@@ -107,11 +107,24 @@ section:nth-of-type(2) h3 {
 section:nth-of-type(3) {
   background-color: #e6a97e;
   margin: 2em 0em 2em 0em;
-  padding: 0em 2em 2em 2em;
   border-radius: 0.5em;
+  max-width: 20em;
 }
 
 section:nth-of-type(3) h3:first-of-type {
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+section:nth-of-type(4) {
+  background-color: #e6a97e;
+  margin: 2em 0em 2em 0em;
+  padding: 0em 2em 2em 2em;
+  max-width: 20em;
+  border-radius: 0.5em;
+}
+
+section:nth-of-type(4) h3:first-of-type {
   text-decoration: underline;
   margin-top: 0;
 }

@@ -93,6 +93,8 @@ TimeAPI. (2021). Time API. Time API. Geraadpleegd op 3 april 2022, van <https://
 
 WorldTimeAPI. (2022). World Time API: Simple JSON/plain-text API to obtain the current time in, and related data about, a timezone. Geraadpleegd op 3 april 2022, van <http://worldtimeapi.org/>
 
+Sizova, M. (2022, 12 februari). Introducing: BreakFastApi 🍕. The most delicious Open Source API. | Geek Culture. Medium. Geraadpleegd op 3 april 2022, van <https://medium.com/geekculture/introducing-breakfastapi-51be441f8a0f>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
