@@ -51,16 +51,36 @@ article{
 
   background-color: $base-color-croissant;
 
-  width: 5em;
+  max-width: 5em;
+  max-height: 5em;
 
   border-width: 0em 0em 0.2em 0.2em;
   border-style: solid;
   border-color: $font-color-bacon;
   border-radius: 0.5em;
-}
-article img{
+  img{
   /*for breakfast types images*/
-  max-width: 4em;
+  max-width: 3em;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+section.profile{
+border-style: solid;
+border-width: 0em 0em 0.2em 0em;
+border-color: $font-color-bacon;
+
+
+min-width: 15em;
+
+h2{
+  background-color: $base-color-coffee;
+  padding: 0.25em 1.5em 0.25em 1.5em;
+
+  border-radius: 0.3em;
+}
 }
 section:nth-of-type(2){
   display: grid;
@@ -69,12 +89,25 @@ section:nth-of-type(2){
 
   grid-gap: 1em;
 
-  align-items: center;
+  h3{
+    /*ideal breakfast kopje*/
+    padding-left: 3em;
+    padding-right: 3em;
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
 }
-section:nth-of-type(2) h3{
-  /*ideal breakfast kopje*/
-  grid-row: 1;
-  grid-column: 1/-1;
+section:nth-of-type(3){
+  background-color: $base-color-croissant;
+  margin: 2em 0em 2em 0em;
+  padding: 0em 2em 2em 2em;
+
+  border-radius: 0.5em;
+
+  h3:first-of-type{
+    text-decoration: underline;
+    margin-top: 0;
+  }
 }
 body section > img {
   /*avatar*/
@@ -291,6 +324,17 @@ form {
   h1 {
     grid-column: 2;
   }
+  article{
+    min-width: 7em;
+    min-height: 7em;
+    img{
+      /*for breakfast types images*/
+      max-width: 4em;
+      }
+    p{
+      margin-top: 1em;
+    }
+  }
   header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -333,5 +377,12 @@ form {
         }
       }
     }
+  }
+  section:nth-of-type(2) h3{
+    padding-left: 6.5em;
+    padding-right: 3em;
+  }
+  section.profile{
+    min-width: 20em;
   }
 }

@@ -4,6 +4,9 @@ const { engine } = require("express-handlebars");
 
 const bodyParser = require("body-parser");
 
+ const fetch = (...args) =>
+   import("node-fetch").then(({ default: fetch }) => fetch(...args));
+
 //afbeeldingen uploaden en handelen
 const multer = require("multer");
 const storage = multer.diskStorage({
@@ -100,8 +103,12 @@ app.get("/home", async (req, res) => {
   //home invoegen en data uit db ophalen en invoegen
   try {
     const profileData = await Profile.findOne({ username: "evaz" }).lean();
-    console.log("profile:", profileData);
-    res.render("home", { profileData });
+
+    const time = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"); //api ophalen
+    const body = await time.json();
+    //console.log(body.time);
+    const timeString = (body.time);
+    res.render("home", { profileData, timeString });
   } catch (error) {
     throw new Error(error);
   }

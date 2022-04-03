@@ -55,7 +55,8 @@ article {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e6a97e;
-  width: 5em;
+  max-width: 5em;
+  max-height: 5em;
   border-width: 0em 0em 0.2em 0.2em;
   border-style: solid;
   border-color: #bb4738;
@@ -64,7 +65,24 @@ article {
 
 article img {
   /*for breakfast types images*/
-  max-width: 4em;
+  max-width: 3em;
+}
+
+article p {
+  margin: 0;
+}
+
+section.profile {
+  border-style: solid;
+  border-width: 0em 0em 0.2em 0em;
+  border-color: #bb4738;
+  min-width: 15em;
+}
+
+section.profile h2 {
+  background-color: #9b572c;
+  padding: 0.25em 1.5em 0.25em 1.5em;
+  border-radius: 0.3em;
 }
 
 section:nth-of-type(2) {
@@ -75,16 +93,27 @@ section:nth-of-type(2) {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 section:nth-of-type(2) h3 {
   /*ideal breakfast kopje*/
+  padding-left: 3em;
+  padding-right: 3em;
   -ms-grid-row: 1;
   grid-row: 1;
   grid-column: 1/-1;
+}
+
+section:nth-of-type(3) {
+  background-color: #e6a97e;
+  margin: 2em 0em 2em 0em;
+  padding: 0em 2em 2em 2em;
+  border-radius: 0.5em;
+}
+
+section:nth-of-type(3) h3:first-of-type {
+  text-decoration: underline;
+  margin-top: 0;
 }
 
 body section > img {
@@ -327,6 +356,17 @@ form button:hover {
     -ms-grid-column: 2;
     grid-column: 2;
   }
+  article {
+    min-width: 7em;
+    min-height: 7em;
+  }
+  article img {
+    /*for breakfast types images*/
+    max-width: 4em;
+  }
+  article p {
+    margin-top: 1em;
+  }
   header {
     display: -ms-grid;
     display: grid;
@@ -374,6 +414,13 @@ form button:hover {
   header nav ul li a {
     /*de links van de nav*/
     width: 1em;
+  }
+  section:nth-of-type(2) h3 {
+    padding-left: 6.5em;
+    padding-right: 3em;
+  }
+  section.profile {
+    min-width: 20em;
   }
 }
 /*# sourceMappingURL=style.css.map */

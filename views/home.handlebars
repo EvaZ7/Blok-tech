@@ -1,7 +1,7 @@
 <body>
     {{>header}}
 
-<section>
+<section class="profile">
 <img src="../static/uploads/{{profileData.avatar}}"><!--avatar invoegen-->
 <p>{{profileData.pronouns}}</p>
 <h2>{{profileData.username}}</h2><!--Username-->
@@ -24,6 +24,7 @@
 </section>
 
 <section>
+    <h3>Current time: {{timeString}}</h3>
     <h3>Usually wakes up at</h3>
     <time datetime="08:00">08:00</time>
 </section>
