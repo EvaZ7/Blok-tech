@@ -105,7 +105,7 @@ app.get("/home", async (req, res) => {
     const profileData = await Profile.findOne({ username: "evaz" }).lean();
 
     const time = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"); //api ophalen
-    const body = await time.json();
+    const body = await time.json(); //response json method
     //console.log(body.time);
     const timeString = (body.time);
     res.render("home", { profileData, timeString });

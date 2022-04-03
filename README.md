@@ -87,6 +87,12 @@ GeeksforGeeks. (2021, december 13). 7 JavaScript Concepts That Every Web Develop
 
 CBEAMS, C. (2021, 27 januari). How to Write a Git Commit Message. Cbeams. Geraadpleegd op 26 maart 2022, van <https://cbea.ms/git-commit/>
 
+Simply Explained. (2019, 12 november). What Are APIs? - Simply Explained. YouTube. Geraadpleegd op 3 april 2022, van <https://www.youtube.com/watch?v=OVvTv9Hy91Q>
+
+TimeAPI. (2021). Time API. Time API. Geraadpleegd op 3 april 2022, van <https://www.timeapi.io/swagger/index.html>
+
+WorldTimeAPI. (2022). World Time API: Simple JSON/plain-text API to obtain the current time in, and related data about, a timezone. Geraadpleegd op 3 april 2022, van <http://worldtimeapi.org/>
+
 #### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
@@ -107,4 +113,4 @@ Stylus. (z.d.). Expressive, dynamic, robust CSS — expressive, robust, feature-
 
 MongoDB. (z.d.). MongoDB: The Application Data Platform. Geraadpleegd op 26 maart 2022, van <https://www.mongodb.com/>
 
-Mongoose. (z.d.). Mongoose ODM v6.2.8. Mongoose ODM. Geraadpleegd op 26 maart 2022, van https://mongoosejs.com/
+Mongoose. (z.d.). Mongoose ODM v6.2.8. Mongoose ODM. Geraadpleegd op 26 maart 2022, van <https://mongoosejs.com/>
