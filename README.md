@@ -1,6 +1,6 @@
 # Blok-tech Ontbijtje
 
-[[https://github.com/EvaZ7/Blok-tech/blob/d2580586a53f2fce6565bd7c409c07c94cd449b6/static/media/logo.png]//
+![](https://github.com/EvaZ7/Blok-tech/blob/db51c232de070be38b030bf655beda6cea8a0371/static/media/logo.png)
 
 _Hiii, my name is Eva and welcome to my readme for cluster tech!_
 
