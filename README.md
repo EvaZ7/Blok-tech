@@ -7,6 +7,7 @@ _Hiii, my name is Eva and welcome to my readme for cluster tech!_
 <!--![GitHub](https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square)-->
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/EvaZ7/Blok-tech/blob/main/LICENSE)
 
 ## Contents
 
