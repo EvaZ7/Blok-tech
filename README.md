@@ -2,12 +2,11 @@
 
 ![](https://github.com/EvaZ7/Blok-tech/blob/db51c232de070be38b030bf655beda6cea8a0371/static/media/logo.png)
 
-_Hiii, my name is Eva and welcome to my readme for cluster tech!_
-
-<!--![GitHub](https://img.shields.io/github/license/EvaZ7/Blok-tech?style=flat-square)-->
-
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![license: mit](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/EvaZ7/Blok-tech/blob/main/LICENSE)
+[![stars](https://img.shields.io/badge/stars-1-9cf?style=flat-square)](https://github.com/EvaZ7/Blok-tech/stargazers)
+
+_Hiii, my name is Eva and welcome to my readme for cluster tech!_
 
 ## Contents
 
@@ -18,20 +17,20 @@ _Hiii, my name is Eva and welcome to my readme for cluster tech!_
 - _Help_ Where do I find help?
 - _Sources_ APA list with used sources.
 
-### About this project
+## About this project
 
 With this project I would like to introduce a new way of matching in the world of matching applications. Which is lettiing people eat breakfast together based on their personal preferences. My target audience for this project is people who love to eat breakfast in the morning and prefer the compagny of someone while doing this.
 _This project will serve as a part of a group project in which we will combine our projects and work together to turn them into one application_
 
-### What does it?
+## What does it?
 
 With this project I am going to create a part of an application for a matching app. This part is going to be the setup of a user profile. Every piece of information that the user fills in will be gathered and eventually be displayed on their profile page.
 
-### Want to contribute?
+## Want to contribute?
 
 Create and issue to give suggestions or discuss an pull request with me. Feedback is always welcome!
 
-#### How do I start?
+### How do I start?
 
 **To install the project, follow these steps:**
 
@@ -53,16 +52,16 @@ npm install
 npm run start
 ```
 
-### Author
+## Author
 
 Credits to me, Eva Zaadnoordijk (500847567) 2022 for Communication and Multimedia Design at the Amsterdam University of Applied Sciences.
 
-### Help
+## Help
 
 Are some parts still a bit confusing? Feel free to contact me at:
 _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
-### Sources
+## Sources
 
 Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
 
@@ -98,11 +97,11 @@ WorldTimeAPI. (2022). World Time API: Simple JSON/plain-text API to obtain the c
 
 Sizova, M. (2022, 12 februari). Introducing: BreakFastApi 🍕. The most delicious Open Source API. | Geek Culture. Medium. Geraadpleegd op 3 april 2022, van <https://medium.com/geekculture/introducing-breakfastapi-51be441f8a0f>
 
-#### Fonts
+### Fonts
 
 Adams, V., Cyreal, & Bailly, J. L. (z.d.). Nunito. Google fonts. Geraadpleegd op 9 maart 2022, van <https://fonts.google.com/specimen/Nunito?query=nunito>
 
-#### Images
+### Images
 
 Wizarding World. (z.d.). Wizarding World: The Official Home of Harry Potter. Wizarding World: The Official Home of Harry Potter. Geraadpleegd op 9 maart 2022, van <https://www.wizardingworld.com/>
 
