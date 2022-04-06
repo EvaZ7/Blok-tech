@@ -1,12 +1,10 @@
 ![](https://github.com/EvaZ7/Blok-tech/blob/db51c232de070be38b030bf655beda6cea8a0371/static/media/logo.png)
 
-<p align="center">
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![license: mit](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/EvaZ7/Blok-tech/blob/main/LICENSE)
 [![stars](https://img.shields.io/badge/stars-1-9cf?style=flat-square)](https://github.com/EvaZ7/Blok-tech/stargazers)
 
 _Hiii, my name is Eva and welcome to my readme for cluster tech!_
-</p>
 
 ## Contents
 
