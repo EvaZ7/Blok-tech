@@ -32,7 +32,7 @@ const breakfastSchema = new mongoose.Schema({
   },
   sandwich: {
     type: String,
-  }
+  },
   // preferences: { type: Schema.Types.ObjectId, ref: 'Preference' },
   // breakfast: [{ type: Schema.Types.ObjectId, ref: 'profile' }],
 });

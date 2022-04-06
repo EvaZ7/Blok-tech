@@ -33,7 +33,7 @@ const profileSchema = new mongoose.Schema({
   avatar: {
     type: String,
     avatar: String,
-  }
+  },
 });
 
 const Profile = mongoose.model("Profile", profileSchema);

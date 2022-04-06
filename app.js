@@ -4,8 +4,8 @@ const { engine } = require("express-handlebars");
 
 const bodyParser = require("body-parser");
 
- const fetch = (...args) =>
-   import("node-fetch").then(({ default: fetch }) => fetch(...args));
+const fetch = (...args) =>
+  import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 //afbeeldingen uploaden en handelen
 const multer = require("multer");
@@ -61,13 +61,15 @@ app.get("/", (req, res) => {
   res.render("getstarted");
 });
 
-app.get("/preferences", (req, res) => { // REMOVE THIS LATER PLZ
+app.get("/preferences", (req, res) => {
+  // REMOVE THIS LATER PLZ
   //home invoegen, root
   res.render("preferences");
   // console.log('avatar');
 });
 
-app.get("/breakfast", (req, res) => { // REMOVE THIS LATER PLZ
+app.get("/breakfast", (req, res) => {
+  // REMOVE THIS LATER PLZ
   //home invoegen, root
   res.render("breakfast");
   // console.log('avatar');
@@ -90,7 +92,7 @@ app.post("/update", async (req, res) => {
     const filter = { username: "evaz" };
     const update = { pronouns: req.body.pronouns };
     await Profile.findOneAndUpdate(filter, update).lean(); //vinden en updaten
-    
+
     const profileData = await Profile.findOne({ username: "evaz" }).lean(); //vinden profile
     console.log("profile:", profileData);
     res.render("home", { profileData });
@@ -104,7 +106,9 @@ app.get("/home", async (req, res) => {
   try {
     const profileData = await Profile.findOne({ username: "evaz" }).lean();
 
-    const time = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"); //api ophalen
+    const time = await fetch(
+      "https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"
+    ); //api ophalen
     const body = await time.json(); //response json method
 
     const recipe = await fetch("https://breakfastapi.fun/"); //api ophalen
@@ -112,11 +116,17 @@ app.get("/home", async (req, res) => {
     //console.log(body.time);
     //console.log(string.recipe);
 
-    const nameString = (string.recipe.name);
-    const ingredientString = (string.recipe.ingredients);
-    const directionsString = (string.recipe.directions);
-    const timeString = (body.time);
-    res.render("home", { profileData, timeString, nameString, ingredientString, directionsString });
+    const nameString = string.recipe.name;
+    const ingredientString = string.recipe.ingredients;
+    const directionsString = string.recipe.directions;
+    const timeString = body.time;
+    res.render("home", {
+      profileData,
+      timeString,
+      nameString,
+      ingredientString,
+      directionsString,
+    });
   } catch (error) {
     throw new Error(error);
   }

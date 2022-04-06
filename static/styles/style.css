@@ -9,11 +9,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 section {
@@ -22,11 +22,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 button {
@@ -38,8 +38,15 @@ button {
   font-size: 1em;
   border-style: solid;
   border-color: #58372a;
-  border-width: 0em 0em 0.25em 0.25em;
+  border-bottom: #28191560 solid;
+  border-width: 0em 0em 0.3em 0.3em;
   border-radius: 0.2em;
+}
+
+button:hover {
+  background-color: #814017;
+  border-width: 0em 0em 0.2em 0.2em;
+  margin-top: 0.1em;
 }
 
 article {
@@ -49,11 +56,11 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #e6a97e;
   max-width: 5em;
   max-height: 5em;
@@ -80,7 +87,7 @@ section.profile {
 }
 
 section.profile h2 {
-  background-color: #9b572c;
+  background-color: #bb4738;
   padding: 0.25em 1.5em 0.25em 1.5em;
   border-radius: 0.3em;
 }
@@ -89,9 +96,9 @@ section:nth-of-type(2) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
 }
 
@@ -108,12 +115,13 @@ section:nth-of-type(3) {
   background-color: #e6a97e;
   margin: 2em 0em 2em 0em;
   border-radius: 0.5em;
-  max-width: 20em;
+  min-width: 24em;
 }
 
 section:nth-of-type(3) h3:first-of-type {
   text-decoration: underline;
   margin-top: 0;
+  color: #bb4738;
 }
 
 section:nth-of-type(4) {
@@ -127,6 +135,7 @@ section:nth-of-type(4) {
 section:nth-of-type(4) h3:first-of-type {
   text-decoration: underline;
   margin-top: 0;
+  color: #bb4738;
 }
 
 body section > img {
@@ -144,8 +153,8 @@ img.logo {
   margin: 0;
   max-width: 10em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   border: none;
 }
 
@@ -176,14 +185,14 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 1em 0em 0.4em;
   z-index: 2;
@@ -207,13 +216,13 @@ nav ul {
   padding-top: 4em;
   padding: 2em 1em 1em 1em;
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 nav ul .open {
   /*openen hamburger menu*/
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
   max-width: 34em;
 }
 
@@ -253,13 +262,13 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #e6a97e;
   border-radius: 2em;
   padding: 1em;
@@ -272,12 +281,12 @@ form fieldset {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border-style: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 18em;
 }
 
@@ -293,8 +302,8 @@ form fieldset legend {
 form fieldset.checkboxes {
   /*checkboxes aan het begin zetten*/
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 form fieldset.checkboxes p {
@@ -322,17 +331,17 @@ form input {
   max-width: 22em;
 }
 
-form input[type=text] {
+form input[type="text"] {
   /*input voor tekst*/
   width: 20em;
 }
 
-form input[type=checkbox] {
+form input[type="checkbox"] {
   /*input voor tekst*/
   cursor: pointer;
 }
 
-form input[type=checkbox]:checked {
+form input[type="checkbox"]:checked {
   /*input voor tekst*/
   background-color: #bb4738;
 }
@@ -340,20 +349,6 @@ form input[type=checkbox]:checked {
 form input:focus {
   background-color: #9b572c;
   padding: 0.5em;
-}
-
-form button {
-  background-color: #9b572c;
-  padding: 0.5em 1em 0.5em 1em;
-  border-style: solid;
-  border-color: #58372a;
-  border-width: 0em 0em 0.25em 0.25em;
-  border-radius: 0.2em;
-}
-
-form button:hover {
-  background-color: #58372a;
-  border-color: #281915;
 }
 
 /*------------------
@@ -384,15 +379,15 @@ form button:hover {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0.5em;
   }
   header nav {
     /*de nav*/
     -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     -ms-grid-row: 2;
     grid-row: 2;
     grid-column: 1/-1;
@@ -408,14 +403,14 @@ form button:hover {
     /*de gehele lijst in de nav*/
     position: static;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 1em;
     background: none;
   }

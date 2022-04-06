@@ -1,5 +1,5 @@
 <body>
-  <img src="/static/media/logo.png" alt="ontbijtje logo" class="logo">
+  <img src="/static/media/logo.png" alt="ontbijtje logo" class="logo" />
   <!-- form voor invoegen profiel -->
   <form method="post" action="/getstarted" enctype="multipart/form-data">
 
@@ -8,7 +8,7 @@
 
       <label for="avatar">Select your avatar</label>
       <!-- avatar invoegen -->
-      <input type="file" name="avatar" id="avatar" required/>
+      <input type="file" name="avatar" id="avatar" required />
 
       <label for="username">Choose your username</label>
       <!-- gebruikersnaam kiezen -->
@@ -18,11 +18,12 @@
       <!-- voornaamwoorden uitkiezen -->
       <input type="text" name="pronouns" required />
     </fieldset>
-    
-      <!-- Uitkiezen voornaamwoorden -->
+
+    <!-- Uitkiezen voornaamwoorden -->
     <p>
-    <input type="checkbox" name="terms_conditions" required />
-    <label for="terms">I agree with the <a href="#">terms of service</a></label>
+      <input type="checkbox" name="terms_conditions" required />
+      <label for="terms">I agree with the
+        <a href="#">terms of service</a></label>
     </p>
 
     <button type="submit">Continue</button>

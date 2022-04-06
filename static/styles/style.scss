@@ -23,7 +23,7 @@ body {
 
   align-items: center;
 }
-section{
+section {
   display: flex;
   flex-direction: column;
 
@@ -40,10 +40,17 @@ button {
 
   border-style: solid;
   border-color: $font-color-basic;
-  border-width: 0em 0em 0.25em 0.25em;
+  border-bottom: #28191560 solid;
+  border-width: 0em 0em 0.3em 0.3em;
   border-radius: 0.2em;
 }
-article{
+button:hover {
+  background-color: #814017;
+  border-width: 0em 0em 0.2em 0.2em;
+
+  margin-top: 0.1em;
+}
+article {
   /*for breakfast types*/
   display: flex;
   flex-direction: column;
@@ -58,38 +65,37 @@ article{
   border-style: solid;
   border-color: $font-color-bacon;
   border-radius: 0.5em;
-  img{
-  /*for breakfast types images*/
-  max-width: 3em;
+  img {
+    /*for breakfast types images*/
+    max-width: 3em;
   }
-  p{
+  p {
     margin: 0;
   }
 }
 
-section.profile{
-border-style: solid;
-border-width: 0em 0em 0.2em 0em;
-border-color: $font-color-bacon;
+section.profile {
+  border-style: solid;
+  border-width: 0em 0em 0.2em 0em;
+  border-color: $font-color-bacon;
 
+  min-width: 15em;
 
-min-width: 15em;
+  h2 {
+    background-color: $font-color-bacon;
+    padding: 0.25em 1.5em 0.25em 1.5em;
 
-h2{
-  background-color: $base-color-coffee;
-  padding: 0.25em 1.5em 0.25em 1.5em;
-
-  border-radius: 0.3em;
+    border-radius: 0.3em;
+  }
 }
-}
-section:nth-of-type(2){
+section:nth-of-type(2) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
   grid-gap: 1em;
 
-  h3{
+  h3 {
     /*ideal breakfast kopje*/
     padding-left: 3em;
     padding-right: 3em;
@@ -97,20 +103,21 @@ section:nth-of-type(2){
     grid-column: 1/-1;
   }
 }
-section:nth-of-type(3){
+section:nth-of-type(3) {
   background-color: $base-color-croissant;
   margin: 2em 0em 2em 0em;
 
   border-radius: 0.5em;
-  max-width: 20em;
+  min-width: 24em;
 
-  h3:first-of-type{
+  h3:first-of-type {
     text-decoration: underline;
     margin-top: 0;
+    color: $font-color-bacon;
   }
 }
 
-section:nth-of-type(4){
+section:nth-of-type(4) {
   background-color: $base-color-croissant;
   margin: 2em 0em 2em 0em;
   padding: 0em 2em 2em 2em;
@@ -119,9 +126,10 @@ section:nth-of-type(4){
 
   border-radius: 0.5em;
 
-  h3:first-of-type{
+  h3:first-of-type {
     text-decoration: underline;
     margin-top: 0;
+    color: $font-color-bacon;
   }
 }
 body section > img {
@@ -142,7 +150,7 @@ img.logo {
 
   border: none;
 }
-nav>a img {
+nav > a img {
   /*hamburger menu knop (streepjes)*/
   height: 2em;
   padding-left: 1em;
@@ -266,7 +274,7 @@ form {
     /*checkboxes aan het begin zetten*/
     align-items: flex-start;
   }
-  fieldset.checkboxes p{
+  fieldset.checkboxes p {
     /*checkboxes weer in het midden zetten*/
     padding-left: 4.5em;
   }
@@ -290,18 +298,18 @@ form {
 
     max-width: 22em;
   }
-  input[type=text]{
+  input[type="text"] {
     /*input voor tekst*/
     width: 20em;
   }
-  input[type=checkbox]{
+  input[type="checkbox"] {
     /*input voor tekst*/
     // width: 8em;
     // height: 2em;
     //opacity: 0;
     cursor: pointer;
   }
-  input[type=checkbox]:checked{
+  input[type="checkbox"]:checked {
     /*input voor tekst*/
     background-color: #bb4738;
   }
@@ -310,22 +318,7 @@ form {
 
     padding: 0.5em;
   }
-  button {
-    background-color: $base-color-coffee;
-
-    padding: 0.5em 1em 0.5em 1em;
-
-    border-style: solid;
-    border-color: $font-color-basic;
-    border-width: 0em 0em 0.25em 0.25em;
-    border-radius: 0.2em;
-  }
-  button:hover {
-    background-color: $font-color-basic;
-    border-color: $font-color-headings;
-  }
 }
-
 
 /*------------------
 ------RESTYLEN------
@@ -339,14 +332,14 @@ form {
   h1 {
     grid-column: 2;
   }
-  article{
+  article {
     min-width: 7em;
     min-height: 7em;
-    img{
+    img {
       /*for breakfast types images*/
       max-width: 4em;
-      }
-    p{
+    }
+    p {
       margin-top: 1em;
     }
   }
@@ -393,11 +386,11 @@ form {
       }
     }
   }
-  section:nth-of-type(2) h3{
+  section:nth-of-type(2) h3 {
     padding-left: 6.5em;
     padding-right: 3em;
   }
-  section.profile{
+  section.profile {
     min-width: 20em;
   }
 }
