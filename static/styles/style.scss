@@ -166,7 +166,7 @@ button > a {
 --------------------*/
 h1 {
   /*de titel*/
-  color: $font-color-headings;
+  color: white;
   text-align: center;
   font-size: 1.5em;
 }
@@ -231,12 +231,57 @@ nav {
   a {
     /*geen underline van linkjes*/
     text-decoration: none;
-    color: $font-color-headings;
+    color: white;
+  }
+  a:hover {
+    /*geen underline van linkjes*/
+    text-decoration: underline;
   }
   & > a img {
     /*hamburger menu knop (streepjes)*/
     height: 2em;
     padding-left: 1em;
+  }
+}
+noscript {
+  /*als javascript het niet meer doet*/
+  grid-row: 2;
+  grid-column: 1/-1;
+  nav {
+    /*de nav*/
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1/-1;
+
+    border-top: solid;
+    border-width: 0.01em;
+    border-color: white;
+
+    ul {
+      /*de gehele lijst in de nav*/
+      position: static;
+      transform: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1em;
+      background: none;
+
+      li {
+        /*de kopjes in de nav*/
+        justify-self: center;
+        font-size: 0.67em;
+        height: 0.5em;
+        padding: 0.3em;
+
+        text-decoration: underline;
+        a {
+          /*de links van de nav*/
+          width: 0.5em;
+          color: white;
+        }
+      }
+    }
   }
 }
 
@@ -324,6 +369,9 @@ form {
 ------RESTYLEN------
 --------------------*/
 @media (min-width: 70em) {
+  noscript {
+    transform: translateX(100%);
+  }
   body {
     background-image: url(/static/media/background.png);
     background-position: 0;
