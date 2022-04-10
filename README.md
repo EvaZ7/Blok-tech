@@ -28,7 +28,7 @@ With this project I am going to create a part of an application for a matching a
 
 Create and issue to give suggestions or discuss an pull request with me. Feedback is always welcome!
 
-### How do I start? ⌨️
+### How do I start?
 
 **To install the project, follow these steps:**
 
