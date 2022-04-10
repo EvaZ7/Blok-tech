@@ -61,20 +61,6 @@ app.get("/", (req, res) => {
   res.render("getstarted");
 });
 
-app.get("/preferences", (req, res) => {
-  // REMOVE THIS LATER PLZ
-  //home invoegen, root
-  res.render("preferences");
-  // console.log('avatar');
-});
-
-app.get("/breakfast", (req, res) => {
-  // REMOVE THIS LATER PLZ
-  //home invoegen, root
-  res.render("breakfast");
-  // console.log('avatar');
-});
-
 app.get("/update", async (req, res) => {
   //update/change profile
   try {
@@ -101,36 +87,36 @@ app.post("/update", async (req, res) => {
   }
 });
 
-app.get("/home", async (req, res) => {
-  //home invoegen en data uit db ophalen en invoegen
-  try {
-    const profileData = await Profile.findOne({ username: "evaz" }).lean();
+// app.get("/home", async (req, res) => {
+//   //home invoegen en data uit db ophalen en invoegen
+//   try {
+//     const profileData = await Profile.findOne({ username: "evaz" }).lean();
 
-    const time = await fetch(
-      "https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"
-    ); //api ophalen
-    const body = await time.json(); //response json method
+//     const time = await fetch(
+//       "https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"
+//     ); //api ophalen
+//     const body = await time.json(); //response json method
 
-    const recipe = await fetch("https://breakfastapi.fun/"); //api ophalen
-    const string = await recipe.json(); //response json method
-    //console.log(body.time);
-    //console.log(string.recipe);
+//     const recipe = await fetch("https://breakfastapi.fun/"); //api ophalen
+//     const string = await recipe.json(); //response json method
+//     //console.log(body.time);
+//     //console.log(string.recipe);
 
-    const nameString = string.recipe.name;
-    const ingredientString = string.recipe.ingredients;
-    const directionsString = string.recipe.directions;
-    const timeString = body.time;
-    res.render("home", {
-      profileData,
-      timeString,
-      nameString,
-      ingredientString,
-      directionsString,
-    });
-  } catch (error) {
-    throw new Error(error);
-  }
-});
+//     const nameString = string.recipe.name;
+//     const ingredientString = string.recipe.ingredients;
+//     const directionsString = string.recipe.directions;
+//     const timeString = body.time;
+//     res.render("home", {
+//       profileData,
+//       timeString,
+//       nameString,
+//       ingredientString,
+//       directionsString,
+//     });
+//   } catch (error) {
+//     throw new Error(error);
+//   }
+// });
 
 //page not found
 app.get("*", (req, res) => {
@@ -170,11 +156,33 @@ app.post("/breakfast", async (req, res) => {
   const breakfast = new Breakfast(req.body);
   breakfast.save();
 
-  const profileData = await Profile.findOne({ username: "evaz" }).lean();
-  res.render("home", { profileData });
-  //  console.log(req.body) //checken of hij data ophaalt uit de body
-  //  const profile = new Profile(req.body);
-  //  profile.save();
+  try {
+    const profileData = await Profile.findOne({ username: "evaz" }).lean();
+
+    const time = await fetch(
+      "https://www.timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam"
+    ); //api ophalen
+    const body = await time.json(); //response json method
+
+    const recipe = await fetch("https://breakfastapi.fun/"); //api ophalen
+    const string = await recipe.json(); //response json method
+    //console.log(body.time);
+    //console.log(string.recipe);
+
+    const nameString = string.recipe.name;
+    const ingredientString = string.recipe.ingredients;
+    const directionsString = string.recipe.directions;
+    const timeString = body.time;
+    res.render("home", {
+      profileData,
+      timeString,
+      nameString,
+      ingredientString,
+      directionsString,
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
 });
 
 //port instellen
