@@ -45,6 +45,7 @@ button {
   border-radius: 0.2em;
 }
 button:hover {
+  cursor: pointer;
   background-color: #814017;
   border-width: 0em 0em 0.2em 0.2em;
 
@@ -348,15 +349,18 @@ form {
     width: 20em;
   }
   input[type="checkbox"] {
-    /*input voor tekst*/
-    // width: 8em;
-    // height: 2em;
-    //opacity: 0;
     cursor: pointer;
   }
-  input[type="checkbox"]:checked {
-    /*input voor tekst*/
-    background-color: #bb4738;
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: $font-color-bacon;
+    padding: 0.2em;
+
+    border: none;
+    border-radius: 0.2em;
+  }
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: $base-color-coffee;
+    cursor: pointer;
   }
   input:focus {
     background-color: $base-color-coffee;

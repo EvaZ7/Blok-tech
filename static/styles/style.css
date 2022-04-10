@@ -9,11 +9,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -22,11 +22,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 button {
@@ -44,6 +44,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: #814017;
   border-width: 0em 0em 0.2em 0.2em;
   margin-top: 0.1em;
@@ -56,11 +57,11 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e6a97e;
   max-width: 5em;
   max-height: 5em;
@@ -96,9 +97,9 @@ section:nth-of-type(2) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
 }
 
@@ -153,8 +154,8 @@ img.logo {
   margin: 0;
   max-width: 10em;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border: none;
 }
 
@@ -185,14 +186,14 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 1em 0em 0.4em;
   z-index: 2;
@@ -216,13 +217,13 @@ nav ul {
   padding-top: 4em;
   padding: 2em 1em 1em 1em;
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 nav ul.open {
   /*openen hamburger menu*/
   -webkit-transform: translateX(0%);
-  transform: translateX(0%);
+          transform: translateX(0%);
   max-width: 34em;
 }
 
@@ -268,7 +269,7 @@ noscript {
 noscript nav {
   /*de nav*/
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   -ms-grid-row: 2;
   grid-row: 2;
   grid-column: 1/-1;
@@ -281,17 +282,17 @@ noscript nav ul {
   /*de gehele lijst in de nav*/
   position: static;
   -webkit-transform: none;
-  transform: none;
+          transform: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1em;
   background: none;
 }
@@ -299,7 +300,7 @@ noscript nav ul {
 noscript nav ul li {
   /*de kopjes in de nav*/
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   font-size: 0.67em;
   height: 0.5em;
   padding: 0.3em;
@@ -321,13 +322,13 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e6a97e;
   border-radius: 2em;
   padding: 1em;
@@ -340,12 +341,12 @@ form fieldset {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-style: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 18em;
 }
 
@@ -361,8 +362,8 @@ form fieldset legend {
 form fieldset.checkboxes {
   /*checkboxes aan het begin zetten*/
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 form fieldset.checkboxes p {
@@ -396,13 +397,19 @@ form input[type="text"] {
 }
 
 form input[type="checkbox"] {
-  /*input voor tekst*/
   cursor: pointer;
 }
 
-form input[type="checkbox"]:checked {
-  /*input voor tekst*/
+form input[type="file"]::-webkit-file-upload-button {
   background-color: #bb4738;
+  padding: 0.2em;
+  border: none;
+  border-radius: 0.2em;
+}
+
+form input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #9b572c;
+  cursor: pointer;
 }
 
 form input:focus {
@@ -416,7 +423,7 @@ form input:focus {
 @media (min-width: 70em) {
   noscript {
     -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+            transform: translateX(100%);
   }
   body {
     background-image: url(/static/media/background.png);
@@ -442,15 +449,15 @@ form input:focus {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0.5em;
   }
   header nav {
     /*de nav*/
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
     -ms-grid-row: 2;
     grid-row: 2;
     grid-column: 1/-1;
@@ -466,14 +473,14 @@ form input:focus {
     /*de gehele lijst in de nav*/
     position: static;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 1em;
     background: none;
   }
