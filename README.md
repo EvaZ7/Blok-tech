@@ -6,7 +6,7 @@
 
 _Hiii, my name is Eva and welcome to my readme for cluster tech!_
 
-## Contents
+## Contents 📑
 
 - _About this project_ Why is it useful?
 - _What does it?_ What is it all about and how does it work?
@@ -15,20 +15,20 @@ _Hiii, my name is Eva and welcome to my readme for cluster tech!_
 - _Help_ Where do I find help?
 - _Sources_ APA list with used sources.
 
-## About this project
+## About this project ✏️
 
 With this project I would like to introduce a new way of matching in the world of matching applications. Which is lettiing people eat breakfast together based on their personal preferences. My target audience for this project is people who love to eat breakfast in the morning and prefer the compagny of someone while doing this.
 _This project will serve as a part of a group project in which we will combine our projects and work together to turn them into one application_
 
-## What does it?
+## What does it? 🥐
 
 With this project I am going to create a part of an application for a matching app. This part is going to be the setup of a user profile. Every piece of information that the user fills in will be gathered and eventually be displayed on their profile page.
 
-## Want to contribute?
+## Want to contribute? 🍳
 
 Create and issue to give suggestions or discuss an pull request with me. Feedback is always welcome!
 
-### How do I start?
+### How do I start? ⌨️
 
 **To install the project, follow these steps:**
 
@@ -50,16 +50,16 @@ npm install
 npm run start
 ```
 
-## Author
+## Author 💁🏻‍♀️
 
 Credits to me, Eva Zaadnoordijk (500847567) 2022 for Communication and Multimedia Design at the Amsterdam University of Applied Sciences.
 
-## Help
+## Help 🤔
 
 Are some parts still a bit confusing? Feel free to contact me at:
 _eva.zaadnoordijk.zaadnoordijk@hva.nl_
 
-## Sources
+## Sources 🧠
 
 Potter, J. (z.d.). beautify vs prettier | npm trends. Npm Trends. Geraadpleegd op 4 maart 2022, van <https://www.npmtrends.com/beautify-vs-prettier>
 
